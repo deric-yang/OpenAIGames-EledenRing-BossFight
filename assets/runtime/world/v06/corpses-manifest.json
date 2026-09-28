@@ -1,0 +1,29 @@
+[
+  {
+    "name": "fallen_1",
+    "source": "source/fallen_mound_v06_1/model.glb",
+    "height_m": 0.85,
+    "triangles": 2200,
+    "source_triangles": 9720,
+    "texture_max": 512,
+    "bytes": 1216536
+  },
+  {
+    "name": "fallen_2",
+    "source": "source/fallen_mound_v06_2/model.glb",
+    "height_m": 0.85,
+    "triangles": 2200,
+    "source_triangles": 9358,
+    "texture_max": 512,
+    "bytes": 1123924
+  },
+  {
+    "name": "fallen_3",
+    "source": "source/fallen_mound_v06_3/model.glb",
+    "height_m": 0.85,
+    "triangles": 2200,
+    "source_triangles": 9296,
+    "texture_max": 512,
+    "bytes": 998740
+  }
+]

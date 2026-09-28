@@ -1,0 +1,64 @@
+{
+  "knight": {
+    "Death01": {
+      "clip": "Death01",
+      "frames": 73,
+      "length": 2.375
+    },
+    "Hit_Chest": {
+      "clip": "Hit_Chest",
+      "frames": 12,
+      "length": 0.333333343267441
+    },
+    "Jog_Fwd_Loop": {
+      "clip": "Jog_Fwd_Loop",
+      "frames": 29,
+      "length": 0.916666686534882
+    },
+    "Roll": {
+      "clip": "Roll",
+      "frames": 45,
+      "length": 1.45833337306976
+    },
+    "Sprint_Loop": {
+      "clip": "Sprint_Loop",
+      "frames": 22,
+      "length": 0.666666686534882
+    },
+    "Sword_Idle": {
+      "clip": "Sword_Idle",
+      "frames": 51,
+      "length": 1.66666662693024
+    },
+    "Walk_Loop": {
+      "clip": "Walk_Loop",
+      "frames": 42,
+      "length": 1.33333337306976
+    },
+    "combat-master-e07664ecc25243ebbfdc": {
+      "clip": "combat-master-e07664ecc25243ebbfdc",
+      "frames": 52,
+      "length": 1.69999992847443
+    },
+    "ual2/Hit_Knockback_RM": {
+      "clip": "ual2__Hit_Knockback_RM",
+      "frames": 26,
+      "length": 0.833333313465118
+    },
+    "ual2/Sword_Regular_A": {
+      "clip": "ual2__Sword_Regular_A",
+      "frames": 15,
+      "length": 0.433333337306976
+    },
+    "ual2/Sword_Regular_B": {
+      "clip": "ual2__Sword_Regular_B",
+      "frames": 18,
+      "length": 0.533333361148834
+    },
+    "ual2/Sword_Regular_Combo": {
+      "clip": "ual2__Sword_Regular_Combo",
+      "frames": 91,
+      "length": 3.0
+    }
+  }
+}

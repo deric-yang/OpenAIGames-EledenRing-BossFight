@@ -1,0 +1,8 @@
+{
+  "source": "assets/source/great_enemy_greatsword_v02/model.glb",
+  "length_m": 4.8,
+  "blade_width_multiplier": 2.2,
+  "blade_depth_multiplier": 2.3,
+  "grip": "width and depth doubled; guard and pommel strengthened",
+  "status": "static art candidate, grip and boss assembly not yet validated"
+}

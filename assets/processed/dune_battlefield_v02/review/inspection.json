@@ -1,0 +1,17 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/dune_battlefield_v02/model.glb",
+  "mesh_objects": 1,
+  "vertices": 29141,
+  "triangles": 57600,
+  "armatures": 0,
+  "dimensions_source": [
+    320.0,
+    360.0,
+    23.494220733642578
+  ],
+  "materials": [
+    "WarmAshSand"
+  ],
+  "images": [],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

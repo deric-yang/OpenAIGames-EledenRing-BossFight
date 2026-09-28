@@ -1,0 +1,20 @@
+{
+  "authoring": "local Blender procedural art, editable source.blend",
+  "credits": 0,
+  "size_m": [
+    320,
+    360
+  ],
+  "grid_spacing_m": 2,
+  "triangles": 57600,
+  "central_radius_m": 30,
+  "central_height_range_m": [
+    -0.15992413289687665,
+    0.15992413289687665
+  ],
+  "height_range_m": [
+    -0.15992413289687665,
+    23.33429756351848
+  ],
+  "collision": "not yet attached to gameplay"
+}

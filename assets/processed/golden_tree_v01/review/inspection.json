@@ -1,0 +1,39 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/golden_tree_v01/model.glb",
+  "mesh_objects": 1,
+  "vertices": 362805,
+  "triangles": 667876,
+  "armatures": 0,
+  "dimensions_source": [
+    6.9818220138549805,
+    8.064718246459961,
+    8.0
+  ],
+  "materials": [
+    "tripo_material_cc956b3f-eb17-429b-bb6c-5f73272d1466"
+  ],
+  "images": [
+    {
+      "name": "Color_cc956b3f-eb17-429b-bb6c-5f73272d1466",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_cc956b3f-eb17-429b-bb6c-5f73272d1466",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_cc956b3f-eb17-429b-bb6c-5f73272d1466",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

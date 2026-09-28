@@ -1,0 +1,223 @@
+{
+  "boss_step": [
+    {
+      "name": "footstep_concrete_land_08",
+      "id": "921c5cd4d05c442968a7",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/921c5cd4d05c442968a7.wav",
+      "file": "res://assets/runtime/audio/v04/boss_step_0.wav",
+      "duration": 0.37202083333333336
+    }
+  ],
+  "boss_run": [
+    {
+      "name": "footstep_concrete_run_08",
+      "id": "1f5c0f15ef13c4aa08e0",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/1f5c0f15ef13c4aa08e0.wav",
+      "file": "res://assets/runtime/audio/v04/boss_run_0.wav",
+      "duration": 0.3
+    }
+  ],
+  "player_step": [
+    {
+      "name": "snow_digging_scooping_shoveling_15",
+      "id": "713053c9b0cf5a1650ec",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/713053c9b0cf5a1650ec.wav",
+      "file": "res://assets/runtime/audio/v04/player_step_0.wav",
+      "duration": 0.3256875
+    }
+  ],
+  "player_steps_loop": [
+    {
+      "name": "snow_digging_scooping_shoveling_loop_01",
+      "id": "43dbd6ab4b95aec53401",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/43dbd6ab4b95aec53401.wav",
+      "file": "res://assets/runtime/audio/v04/player_steps_loop_0.wav",
+      "duration": 2.144083333333333
+    }
+  ],
+  "player_roll": [
+    {
+      "name": "foley_cloth_light_fast_movement_12",
+      "id": "bea76e43cbc1684a2845",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/bea76e43cbc1684a2845.wav",
+      "file": "res://assets/runtime/audio/v04/player_roll_0.wav",
+      "duration": 0.469375
+    }
+  ],
+  "ambient": [
+    {
+      "name": "background_room_tone_loop_02",
+      "id": "0eee99c184ce0ee5d430",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/0eee99c184ce0ee5d430.wav",
+      "file": "res://assets/runtime/audio/v04/ambient_0.wav",
+      "duration": 11.253666666666666
+    }
+  ],
+  "execution": [
+    {
+      "name": "cinematic_deep_low_whoosh_impact_03",
+      "id": "682507706a9560f93b95",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/682507706a9560f93b95.wav",
+      "file": "res://assets/runtime/audio/v04/execution_0.wav",
+      "duration": 2.4366458333333334
+    },
+    {
+      "name": "SD_Blood Guts Small 01",
+      "id": "samurai-1f738518848f234d2007",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Blood/SD_Blood Guts Small 01.wav",
+      "file": "res://assets/runtime/audio/v04/execution_1.wav",
+      "duration": 25.574458333333332
+    }
+  ],
+  "boss_roar": [
+    {
+      "name": "troll_monster_battle_grunt_05",
+      "id": "49797d906ea38948b89f",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/49797d906ea38948b89f.wav",
+      "file": "res://assets/runtime/audio/v04/boss_roar_0.wav",
+      "duration": 1.5751041666666667
+    }
+  ],
+  "boss_hurt": [
+    {
+      "name": "troll_monster_hurt_pain_short_05",
+      "id": "c4fff10fd58989e75cd7",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/c4fff10fd58989e75cd7.wav",
+      "file": "res://assets/runtime/audio/v04/boss_hurt_0.wav",
+      "duration": 0.890375
+    },
+    {
+      "name": "troll_monster_hurt_pain_long_04",
+      "id": "466cc9ed68227c053c0d",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/466cc9ed68227c053c0d.wav",
+      "file": "res://assets/runtime/audio/v04/boss_hurt_1.wav",
+      "duration": 0.736375
+    }
+  ],
+  "boss_victory": [
+    {
+      "name": "troll_monster_laugh_07",
+      "id": "2fa53efadd32686e02d8",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/2fa53efadd32686e02d8.wav",
+      "file": "res://assets/runtime/audio/v04/boss_victory_0.wav",
+      "duration": 3.26
+    }
+  ],
+  "player_hurt": [
+    {
+      "name": "voice_male_b_hurt_pain_set_2_03",
+      "id": "a364d81fec00b992db13",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/a364d81fec00b992db13.wav",
+      "file": "res://assets/runtime/audio/v04/player_hurt_0.wav",
+      "duration": 0.49466666666666664
+    },
+    {
+      "name": "voice_male_b_hurt_pain_set_2_04",
+      "id": "cfdf7c3146c313ce6972",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/cfdf7c3146c313ce6972.wav",
+      "file": "res://assets/runtime/audio/v04/player_hurt_1.wav",
+      "duration": 0.35
+    }
+  ],
+  "player_launch": [
+    {
+      "name": "voice_male_b_hurt_pain_set_1_04",
+      "id": "e3acae0e749b7371198e",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/e3acae0e749b7371198e.wav",
+      "file": "res://assets/runtime/audio/v04/player_launch_0.wav",
+      "duration": 0.4730416666666667
+    }
+  ],
+  "blood_hit": [
+    {
+      "name": "bullet_impact_body_flesh_02",
+      "id": "d3cb8842bdde4999f697",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/d3cb8842bdde4999f697.wav",
+      "file": "res://assets/runtime/audio/v04/blood_hit_0.wav",
+      "duration": 0.7
+    },
+    {
+      "name": "bullet_impact_body_flesh_03",
+      "id": "2b42e9cd493e433da28f",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/2b42e9cd493e433da28f.wav",
+      "file": "res://assets/runtime/audio/v04/blood_hit_1.wav",
+      "duration": 0.6812916666666666
+    },
+    {
+      "name": "bullet_impact_body_flesh_04",
+      "id": "02c7f2be24071fc37e2b",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/pro-sound/public/audio/02c7f2be24071fc37e2b.wav",
+      "file": "res://assets/runtime/audio/v04/blood_hit_2.wav",
+      "duration": 0.79525
+    }
+  ],
+  "boss_swing": [
+    {
+      "name": "SD_Blade,Swing,Whoosh.5",
+      "id": "samurai-6c8b52f332776016fbed",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Swing Whooshes/SD_Blade,Swing,Whoosh.5.wav",
+      "file": "res://assets/runtime/audio/v04/boss_swing_0.wav",
+      "duration": 0.42133333333333334
+    }
+  ],
+  "player_swing_1": [
+    {
+      "name": "SD_Ruby,Schwing-Scrape 13",
+      "id": "samurai-ac159ba7bd3749b6db2b",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Hits/SD_Ruby,Schwing-Scrape 13.wav",
+      "file": "res://assets/runtime/audio/v04/player_swing_1_0.wav",
+      "duration": 2.005333333333333
+    }
+  ],
+  "player_swing_2": [
+    {
+      "name": "SD_Ruby,Schwing-Scrape 07",
+      "id": "samurai-87467b044e78c2584e34",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Hits/SD_Ruby,Schwing-Scrape 07.wav",
+      "file": "res://assets/runtime/audio/v04/player_swing_2_0.wav",
+      "duration": 2.005333333333333
+    }
+  ],
+  "player_swing_3": [
+    {
+      "name": "SD_Schwing,Fast 09",
+      "id": "samurai-b742b470ed64dbdcba42",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Hits/SD_Schwing,Fast 09.wav",
+      "file": "res://assets/runtime/audio/v04/player_swing_3_0.wav",
+      "duration": 1.8026666666666666
+    }
+  ],
+  "player_death": [
+    {
+      "name": "SD_Broad Drop Large 01",
+      "id": "samurai-fc1845d6684834696e1e",
+      "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/asset-audition/shared-pool/source/samurai-duels/Samurai Duels/Hits/SD_Broad Drop Large 01.wav",
+      "file": "res://assets/runtime/audio/v06/sword_drop_single.wav",
+      "duration": 2.2,
+      "edit": "First impact only, 0–2.2s; 350ms tail fade"
+    }
+  ],
+  "announcement": [
+    {
+      "name": "cinematic_deep_low_whoosh_impact_05",
+      "file": "res://assets/runtime/audio/v06/announcement.wav",
+      "duration": 3.513333
+    }
+  ],
+  "boss_grunt_01": [
+    {
+      "name": "troll_monster_battle_grunt_01",
+      "id": "a4394e2686718851c69e",
+      "file": "res://assets/runtime/audio/v07/grunt_01.wav",
+      "duration": 0.9952291666666667
+    }
+  ],
+  "boss_grunt_03": [
+    {
+      "name": "troll_monster_battle_grunt_03",
+      "id": "e316c280730b8d7dcf9b",
+      "file": "res://assets/runtime/audio/v07/grunt_03.wav",
+      "duration": 1.1761875
+    }
+  ]
+}

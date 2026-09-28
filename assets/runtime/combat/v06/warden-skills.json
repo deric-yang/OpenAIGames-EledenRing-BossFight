@@ -1,0 +1,226 @@
+{
+  "combat-master-1f42a02de2fa47077abd": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34,
+      0.65
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "sand",
+    "delay": 0.0,
+    "voice": "boss_grunt_01"
+  },
+  "combat-master-8dbbfe19c5e1ff8e0e88": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34
+    ],
+    "damage": 0,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "push",
+    "delay": 0.0
+  },
+  "combat-master-3c8d3a0c2bc89d15c58e": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 75,
+    "width": 2.2,
+    "windows": [
+      0.5
+    ],
+    "damage": 30,
+    "speed": 1.0,
+    "recovery": 1.3,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-e04e545ae5e634c10286": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.46
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.3,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-30eb25c4486f5e68e256": {
+    "shape": "sector",
+    "reach": 8.7,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.46
+    ],
+    "damage": 31,
+    "speed": 1.0,
+    "recovery": 1.9,
+    "effect": "eruption",
+    "delay": 0.0,
+    "voice": "boss_grunt_03"
+  },
+  "combat-master-1630f9acdead00d74cc9": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.46
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.3,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-e09b39ae22f314c7b2f7": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.46
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.3,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-7e92e8407ac955edd4d4": {
+    "shape": "disc",
+    "reach": 7.2,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.38,
+      0.72
+    ],
+    "damage": 36,
+    "speed": 1.0,
+    "recovery": 2.25,
+    "effect": "eruption",
+    "delay": 0.0,
+    "offset": 3.0,
+    "voice": "boss_grunt_01"
+  },
+  "combat-master-df81ad81cd2ce4829dc2": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34,
+      0.65
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-b9cf14ceb4253de3a06a": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.46
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.3,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-b05c145bc48d267a1ad9": {
+    "shape": "lane",
+    "reach": 12.0,
+    "angle": 30,
+    "width": 1.8,
+    "windows": [
+      0.45
+    ],
+    "damage": 34,
+    "speed": 1.0,
+    "recovery": 2.0,
+    "effect": "fissure",
+    "delay": 0.85,
+    "voice": "boss_grunt_03"
+  },
+  "combat-master-b786d0b86e8a5ac01cec": {
+    "shape": "disc",
+    "reach": 5.8,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.64
+    ],
+    "damage": 34,
+    "speed": 1.0,
+    "recovery": 2.2,
+    "effect": "eruption",
+    "delay": 0.0,
+    "offset": 3.8,
+    "voice": "boss_grunt_01"
+  },
+  "combat-master-726691b0646213356b8e": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34,
+      0.65
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "sand",
+    "delay": 0.0
+  },
+  "combat-master-198acccca5330d9c795e": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34,
+      0.65
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "sand",
+    "delay": 0.0,
+    "voice": "boss_grunt_03"
+  },
+  "combat-master-62404383534ae14396a3": {
+    "shape": "sector",
+    "reach": 8.0,
+    "angle": 100.0,
+    "width": 2.2,
+    "windows": [
+      0.34,
+      0.65
+    ],
+    "damage": 23,
+    "speed": 1.0,
+    "recovery": 1.65,
+    "effect": "sand",
+    "delay": 0.0
+  }
+}

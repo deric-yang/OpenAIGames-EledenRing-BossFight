@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://assets/runtime/vfx/v04/effects/blood_library.gd" id="1"]
+
+[node name="NS_BloodBurst_High" type="Node3D"]
+script = ExtResource("1")
+config_file = "res://assets/runtime/vfx/v04/configs/realistic-blood_NS_BloodBurst_High.json"

@@ -1,0 +1,12 @@
+{
+  "family": "splash",
+  "count": 240,
+  "size": 1.15,
+  "speed": 1.12,
+  "mask": "assets/runtime/vfx/v04/textures/library/T_BloodSplatter_04.png",
+  "decal": "assets/runtime/vfx/v04/textures/T_BloodSplotch_01.png",
+  "duration": 4.5,
+  "tier": "High",
+  "seed": 52254724,
+  "source_id": "realistic-blood-b501cb2fd42fe3ad6f9b"
+}

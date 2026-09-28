@@ -1,0 +1,12 @@
+{
+  "authoring": "local Blender mesh and morph animation",
+  "credits": 0,
+  "size_m": [
+    3.2,
+    17
+  ],
+  "cloth_alpha": 0.28,
+  "rune_alpha": 0.45,
+  "animation": "4-second cyclic wind; glTF morph targets",
+  "placement": "lower hem anchored to terrain; translucent spirit cloth"
+}

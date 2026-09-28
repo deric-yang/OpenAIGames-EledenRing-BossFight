@@ -1,0 +1,20 @@
+[
+  {
+    "name": "column",
+    "source": "source/ruined_ionic_column_v05/model.glb",
+    "height_m": 6.5,
+    "triangles": 6499,
+    "source_triangles": 38438,
+    "texture_max": 1024,
+    "bytes": 3966048
+  },
+  {
+    "name": "wall",
+    "source": "source/ruined_stone_wall_v05/model.glb",
+    "height_m": 4.2,
+    "triangles": 8499,
+    "source_triangles": 43826,
+    "texture_max": 1024,
+    "bytes": 4550364
+  }
+]

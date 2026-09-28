@@ -1,0 +1,18 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/soul_standard_v02/model.glb",
+  "mesh_objects": 2,
+  "vertices": 2364,
+  "triangles": 3960,
+  "armatures": 0,
+  "dimensions_source": [
+    3.3871419429779053,
+    1.2598904371261597,
+    16.759977340698242
+  ],
+  "materials": [
+    "FadedIvorySoulCloth",
+    "GhostGoldRunes"
+  ],
+  "images": [],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

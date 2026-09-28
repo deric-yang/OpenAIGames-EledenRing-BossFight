@@ -1,0 +1,39 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/polearm_grave_cluster_v02/model.glb",
+  "mesh_objects": 1,
+  "vertices": 93495,
+  "triangles": 171658,
+  "armatures": 0,
+  "dimensions_source": [
+    0.5390040874481201,
+    1.1815738677978516,
+    2.0999999046325684
+  ],
+  "materials": [
+    "tripo_material_8e8ab0da-21db-48de-a73d-b740d22534ef"
+  ],
+  "images": [
+    {
+      "name": "Color_8e8ab0da-21db-48de-a73d-b740d22534ef",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_8e8ab0da-21db-48de-a73d-b740d22534ef",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_8e8ab0da-21db-48de-a73d-b740d22534ef",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

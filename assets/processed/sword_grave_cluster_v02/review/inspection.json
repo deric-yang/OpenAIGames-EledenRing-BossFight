@@ -1,0 +1,39 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/sword_grave_cluster_v02/model.glb",
+  "mesh_objects": 1,
+  "vertices": 95182,
+  "triangles": 174909,
+  "armatures": 0,
+  "dimensions_source": [
+    0.1883607804775238,
+    0.7092204689979553,
+    0.75
+  ],
+  "materials": [
+    "tripo_material_f9f90f7c-0b49-454e-9eda-13a9ed563a4a"
+  ],
+  "images": [
+    {
+      "name": "Color_f9f90f7c-0b49-454e-9eda-13a9ed563a4a",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_f9f90f7c-0b49-454e-9eda-13a9ed563a4a",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_f9f90f7c-0b49-454e-9eda-13a9ed563a4a",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

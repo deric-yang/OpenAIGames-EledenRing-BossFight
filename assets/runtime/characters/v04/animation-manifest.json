@@ -1,0 +1,199 @@
+{
+  "general": {
+    "Sword_Idle": {
+      "clip": "Sword_Idle",
+      "frames": 51.0,
+      "length": 1.66666662693024
+    },
+    "Warden_Kneel_Enter": {
+      "authored": "one-knee target-rig pose",
+      "clip": "Warden_Kneel_Enter",
+      "frames": 24,
+      "length": 0.75
+    },
+    "Warden_Kneel_Hold": {
+      "authored": "one-knee target-rig pose",
+      "clip": "Warden_Kneel_Hold",
+      "frames": 61,
+      "length": 2.0
+    },
+    "Warden_Rise": {
+      "authored": "one-knee target-rig pose",
+      "clip": "Warden_Rise",
+      "frames": 39,
+      "length": 1.25
+    },
+    "combat-master-1409c47c83223aac5e53": {
+      "clip": "combat-master-1409c47c83223aac5e53",
+      "frames": 37.0,
+      "length": 1.18333327770233
+    },
+    "combat-master-1630f9acdead00d74cc9": {
+      "clip": "combat-master-1630f9acdead00d74cc9",
+      "frames": 77.0,
+      "length": 2.53333330154419
+    },
+    "combat-master-198acccca5330d9c795e": {
+      "clip": "combat-master-198acccca5330d9c795e",
+      "frames": 50.0,
+      "length": 1.60000002384186
+    },
+    "combat-master-1f059a763b2ce804220f": {
+      "clip": "combat-master-1f059a763b2ce804220f",
+      "frames": 31.0,
+      "length": 0.999999940395355
+    },
+    "combat-master-1f42a02de2fa47077abd": {
+      "clip": "combat-master-1f42a02de2fa47077abd",
+      "frames": 38.0,
+      "length": 1.20000004768372
+    },
+    "combat-master-2671a40251ac813d8b61": {
+      "clip": "combat-master-2671a40251ac813d8b61",
+      "frames": 16.0,
+      "length": 0.5
+    },
+    "combat-master-30eb25c4486f5e68e256": {
+      "clip": "combat-master-30eb25c4486f5e68e256",
+      "frames": 87.0,
+      "length": 2.86666655540466
+    },
+    "combat-master-38cb716005f9f62f42ec": {
+      "clip": "combat-master-38cb716005f9f62f42ec",
+      "frames": 34.0,
+      "length": 1.08333337306976
+    },
+    "combat-master-3c8d3a0c2bc89d15c58e": {
+      "clip": "combat-master-3c8d3a0c2bc89d15c58e",
+      "frames": 63.0,
+      "length": 2.06666660308838
+    },
+    "combat-master-577f7516d930b2ed0ead": {
+      "clip": "combat-master-577f7516d930b2ed0ead",
+      "frames": 22.0,
+      "length": 0.683333337306976
+    },
+    "combat-master-62404383534ae14396a3": {
+      "clip": "combat-master-62404383534ae14396a3",
+      "frames": 76.0,
+      "length": 2.46666669845581
+    },
+    "combat-master-6d0ba7c3ad4d32ebe094": {
+      "clip": "combat-master-6d0ba7c3ad4d32ebe094",
+      "frames": 31.0,
+      "length": 0.999999940395355
+    },
+    "combat-master-726691b0646213356b8e": {
+      "clip": "combat-master-726691b0646213356b8e",
+      "frames": 58.0,
+      "length": 1.86666667461395
+    },
+    "combat-master-7b320512f62717bdb578": {
+      "clip": "combat-master-7b320512f62717bdb578",
+      "frames": 35.0,
+      "length": 1.10000002384186
+    },
+    "combat-master-7e92e8407ac955edd4d4": {
+      "clip": "combat-master-7e92e8407ac955edd4d4",
+      "frames": 120.0,
+      "length": 3.93333339691162
+    },
+    "combat-master-8dbbfe19c5e1ff8e0e88": {
+      "clip": "combat-master-8dbbfe19c5e1ff8e0e88",
+      "frames": 34.0,
+      "length": 1.08333337306976
+    },
+    "combat-master-b05c145bc48d267a1ad9": {
+      "clip": "combat-master-b05c145bc48d267a1ad9",
+      "frames": 53.0,
+      "length": 1.70000004768372
+    },
+    "combat-master-b786d0b86e8a5ac01cec": {
+      "clip": "combat-master-b786d0b86e8a5ac01cec",
+      "frames": 48.0,
+      "length": 1.54999995231628
+    },
+    "combat-master-b9cf14ceb4253de3a06a": {
+      "clip": "combat-master-b9cf14ceb4253de3a06a",
+      "frames": 58.0,
+      "length": 1.89999997615814
+    },
+    "combat-master-df81ad81cd2ce4829dc2": {
+      "clip": "combat-master-df81ad81cd2ce4829dc2",
+      "frames": 69.0,
+      "length": 2.26666665077209
+    },
+    "combat-master-e04e545ae5e634c10286": {
+      "clip": "combat-master-e04e545ae5e634c10286",
+      "frames": 68.0,
+      "length": 2.20000004768372
+    },
+    "combat-master-e09b39ae22f314c7b2f7": {
+      "clip": "combat-master-e09b39ae22f314c7b2f7",
+      "frames": 55.0,
+      "length": 1.79999995231628
+    }
+  },
+  "knight": {
+    "Death01": {
+      "clip": "Death01",
+      "frames": 73.0,
+      "length": 2.375
+    },
+    "Hit_Chest": {
+      "clip": "Hit_Chest",
+      "frames": 12.0,
+      "length": 0.333333343267441
+    },
+    "Jog_Fwd_Loop": {
+      "clip": "Jog_Fwd_Loop",
+      "frames": 29.0,
+      "length": 0.916666686534882
+    },
+    "Roll": {
+      "clip": "Roll",
+      "frames": 45.0,
+      "length": 1.45833337306976
+    },
+    "Sprint_Loop": {
+      "clip": "Sprint_Loop",
+      "frames": 22.0,
+      "length": 0.666666686534882
+    },
+    "Sword_Idle": {
+      "clip": "Sword_Idle",
+      "frames": 51.0,
+      "length": 1.66666662693024
+    },
+    "Walk_Loop": {
+      "clip": "Walk_Loop",
+      "frames": 42.0,
+      "length": 1.33333337306976
+    },
+    "combat-master-e07664ecc25243ebbfdc": {
+      "clip": "combat-master-e07664ecc25243ebbfdc",
+      "frames": 52.0,
+      "length": 1.69999992847443
+    },
+    "ual2/Hit_Knockback_RM": {
+      "clip": "ual2__Hit_Knockback_RM",
+      "frames": 26.0,
+      "length": 0.833333313465118
+    },
+    "ual2/Sword_Regular_A": {
+      "clip": "ual2__Sword_Regular_A",
+      "frames": 15.0,
+      "length": 0.433333337306976
+    },
+    "ual2/Sword_Regular_B": {
+      "clip": "ual2__Sword_Regular_B",
+      "frames": 18.0,
+      "length": 0.533333361148834
+    },
+    "ual2/Sword_Regular_Combo": {
+      "clip": "ual2__Sword_Regular_Combo",
+      "frames": 91.0,
+      "length": 3.0
+    }
+  }
+}

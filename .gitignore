@@ -5,8 +5,6 @@
 builds/*
 qa/*.png
 qa/*.webm
-assets/source/**
-!assets/source/**/
 generation-records/tasks/*.json
 generation-records/hashes/*.json
 .env

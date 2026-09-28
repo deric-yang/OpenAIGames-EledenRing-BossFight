@@ -1,0 +1,92 @@
+[
+  {
+    "name": "boss",
+    "source": "source/great_enemy_body_v01/model.glb",
+    "height_m": 7.2,
+    "triangles": 70000,
+    "source_triangles": 783056,
+    "texture_max": 2048,
+    "bytes": 16139340
+  },
+  {
+    "name": "player",
+    "source": "source/player_silver_v01/model.glb",
+    "height_m": 1.85,
+    "triangles": 35000,
+    "source_triangles": 473707,
+    "texture_max": 2048,
+    "bytes": 14382596
+  },
+  {
+    "name": "sword",
+    "source": "processed/great_enemy_greatsword_v03/model.glb",
+    "height_m": 4.8,
+    "triangles": 21999,
+    "source_triangles": 169216,
+    "texture_max": 2048,
+    "bytes": 14351736
+  },
+  {
+    "name": "tree",
+    "source": "source/golden_tree_v01/model.glb",
+    "height_m": 94,
+    "triangles": 45000,
+    "source_triangles": 667876,
+    "texture_max": 2048,
+    "bytes": 13218172
+  },
+  {
+    "name": "rubble",
+    "source": "source/war_relic_cluster_v01/model.glb",
+    "height_m": 1.0,
+    "triangles": 9000,
+    "source_triangles": 240991,
+    "texture_max": 1024,
+    "bytes": 4743808
+  },
+  {
+    "name": "graves",
+    "source": "source/sword_grave_cluster_v02/model.glb",
+    "height_m": 1.7,
+    "triangles": 10000,
+    "source_triangles": 174909,
+    "texture_max": 1024,
+    "bytes": 4562744
+  },
+  {
+    "name": "polearms",
+    "source": "source/polearm_grave_cluster_v02/model.glb",
+    "height_m": 3.6,
+    "triangles": 10000,
+    "source_triangles": 171658,
+    "texture_max": 1024,
+    "bytes": 4177540
+  },
+  {
+    "name": "terrain",
+    "source": "source/dune_battlefield_v02/model.glb",
+    "height_m": null,
+    "triangles": 57600,
+    "source_triangles": 57600,
+    "texture_max": 1024,
+    "bytes": 1629104
+  },
+  {
+    "name": "standard",
+    "source": "source/soul_standard_v02/model.glb",
+    "height_m": null,
+    "triangles": 3960,
+    "source_triangles": 3960,
+    "texture_max": 1024,
+    "bytes": 240332
+  },
+  {
+    "name": "sigil",
+    "source": "source/golden_respawn_sigil_v03/model.glb",
+    "height_m": null,
+    "triangles": 13999,
+    "source_triangles": 152738,
+    "texture_max": 2048,
+    "bytes": 17337408
+  }
+]

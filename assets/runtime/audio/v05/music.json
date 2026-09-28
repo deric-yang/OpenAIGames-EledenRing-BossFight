@@ -1,0 +1,10 @@
+{
+  "name": "music_epic_orchestral_bg_underscore",
+  "catalog_id": "84bf8c21e871a68f7ca7",
+  "original_lufs": -11.71,
+  "original_true_peak_db": 0.03,
+  "linear_attenuation_db": -11.29,
+  "runtime_gain_db": -3,
+  "loop_crossfade_seconds": 1,
+  "notes": "Preserve source dynamics; music bed approximately -26 LUFS solo, not a certification of overall gameplay mix."
+}

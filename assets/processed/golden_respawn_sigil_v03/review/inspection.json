@@ -1,0 +1,39 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/runtime/assembly/sigil.glb",
+  "mesh_objects": 1,
+  "vertices": 14181,
+  "triangles": 13999,
+  "armatures": 0,
+  "dimensions_source": [
+    3.296860456466675,
+    3.2996039390563965,
+    0.08976123481988907
+  ],
+  "materials": [
+    "tripo_material_ecba515c-69ac-493a-8687-d2f7e74a9506"
+  ],
+  "images": [
+    {
+      "name": "Color_ecba515c-69ac-493a-8687-d2f7e74a9506",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "NormalGL_ecba515c-69ac-493a-8687-d2f7e74a9506",
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ORM_ecba515c-69ac-493a-8687-d2f7e74a9506",
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

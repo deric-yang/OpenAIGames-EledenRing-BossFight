@@ -1,0 +1,39 @@
+{
+  "source": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/assets/source/player_silver_v01/model.glb",
+  "mesh_objects": 1,
+  "vertices": 255145,
+  "triangles": 473707,
+  "armatures": 0,
+  "dimensions_source": [
+    0.34340888261795044,
+    0.9929585456848145,
+    1.8499999046325684
+  ],
+  "materials": [
+    "tripo_material_878680ef-f845-4e91-ab15-71170013fb4d"
+  ],
+  "images": [
+    {
+      "name": "Color_878680ef-f845-4e91-ab15-71170013fb4d",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "NormalGL_878680ef-f845-4e91-ab15-71170013fb4d",
+      "size": [
+        4096,
+        4096
+      ]
+    },
+    {
+      "name": "ORM_878680ef-f845-4e91-ab15-71170013fb4d",
+      "size": [
+        4096,
+        4096
+      ]
+    }
+  ],
+  "status": "source_review_only_not_rigged_or_runtime_approved"
+}

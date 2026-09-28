@@ -1,0 +1,12 @@
+{
+  "family": "burst",
+  "count": 240,
+  "size": 1.15,
+  "speed": 1.12,
+  "mask": "assets/runtime/vfx/v04/textures/library/T_BloodSplatter_03.png",
+  "decal": "assets/runtime/vfx/v04/textures/T_BloodSplotch_01.png",
+  "duration": 4.5,
+  "tier": "High",
+  "seed": 92101090,
+  "source_id": "realistic-blood-2d95c084cb8cd9287400"
+}

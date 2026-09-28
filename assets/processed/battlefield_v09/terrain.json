@@ -1,0 +1,12 @@
+{
+  "center_godot": [
+    7,
+    -26
+  ],
+  "flat_radius": 3.1,
+  "blend_radius": 7.5,
+  "triangles": 75480,
+  "local_grid_spacing": 0.5,
+  "height": 18.44846604087507,
+  "collision": "same mesh via create_trimesh_collision"
+}
