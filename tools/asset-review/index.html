@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="zh-CN">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>古战场遗迹 · 资产审阅</title>
+<link rel="stylesheet" href="review.css">
+<script type="module" src="vendor/model-viewer.min.js"></script>
+<header><span>WEEPING DUNES / ART REVIEW 04</span><a href="/">进入可玩战场 ↗</a><a href="/boss-motions/">Boss 动作看板 ↗</a></header>
+<main>
+    <aside>
+        <p class="eyebrow">古战场遗迹</p><h1>战争之后，<br>只余回响。</h1>
+        <p class="intro">银灰骑士 · 羽饰老将 · 战旗长枪 · 古战场遗迹</p>
+        <nav aria-label="资产选择" id="assets"></nav>
+        <p class="notice">V04 运行时资产已接入游戏。角色保留骨架及动作；完整 Blender 场景也已保存。战旗、雾层、粒子与声音的组合效果请进入战场查看。</p>
+    </aside>
+    <section class="stage">
+        <div class="heading"><div><p class="eyebrow" id="number"></p><h2 id="title"></h2></div><a id="download" download>下载 GLB ↓</a></div>
+        <model-viewer camera-controls autoplay min-camera-orbit="auto auto 2m" shadow-intensity="0.7" exposure="1" camera-orbit="90deg 80deg auto" alt="当前资产的可交互三维模型"></model-viewer>
+        <div class="controls"><span id="load-state" role="status">准备加载</span><span>拖动旋转 · 滚轮缩放</span><select id="motion" aria-label="动作预览" hidden></select><button id="ground-view" hidden>场内视角</button><button id="wind" hidden>暂停飘动</button><button id="reset">重置视角</button></div>
+        <p id="description"></p><div id="metrics"></div>
+        <div id="renders"></div>
+    </section>
+</main>
+<script type="module" src="review.mjs"></script>
+</html>

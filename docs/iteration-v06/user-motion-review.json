@@ -1,0 +1,281 @@
+{
+  "project": "gilded-ruin-boss",
+  "version": "v05",
+  "exported": "2026-09-27T16:18:51.919Z",
+  "motions": [
+    {
+      "id": "Sword_Idle",
+      "name": "持枪待机",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "Warden_Kneel_Enter",
+      "name": "单膝跪下 · 进入处决窗口",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "Warden_Kneel_Hold",
+      "name": "单膝跪地 · 等待处决",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "Warden_Rise",
+      "name": "支撑起身 · 处决超时恢复",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "combat-master-0f39312e0f3f1824ade8",
+      "name": "Anim_Tb_Attack_Jump2",
+      "status": "remove",
+      "note": "这个也是一倍速正好",
+      "updated": "2026-09-27T16:10:44.483Z"
+    },
+    {
+      "id": "combat-master-1409c47c83223aac5e53",
+      "name": "Anim_KT3_Intro_RM",
+      "status": "pending",
+      "note": "需要慢一点来突出这一下的力量感。首先整体会慢一点，可以慢 25%, 其次就是可以先慢后快，做一个非线性的动画变化",
+      "updated": "2026-09-27T15:10:40.252Z"
+    },
+    {
+      "id": "combat-master-1630f9acdead00d74cc9",
+      "name": "Anim_Tb_Attack_Slash10",
+      "status": "keep",
+      "note": "现在的一倍速反而正好合适，可以这样改它动作的整体长度",
+      "updated": "2026-09-27T15:12:07.219Z"
+    },
+    {
+      "id": "combat-master-198acccca5330d9c795e",
+      "name": "Anim_DK2_Combo_D1_IP",
+      "status": "keep",
+      "note": "这个也一倍速正好",
+      "updated": "2026-09-27T15:12:00.378Z"
+    },
+    {
+      "id": "combat-master-1f059a763b2ce804220f",
+      "name": "Anim_KT3_Walk_BR_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T15:12:02.973Z"
+    },
+    {
+      "id": "combat-master-1f42a02de2fa47077abd",
+      "name": "Anim_SAS_V2_ComboAttack03_03_IP",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T15:14:27.361Z"
+    },
+    {
+      "id": "combat-master-2671a40251ac813d8b61",
+      "name": "Anim_PS_Hit_Front_Middle_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:10:24.073Z"
+    },
+    {
+      "id": "combat-master-284267a9c91fe7194691",
+      "name": "Anim_Tb_Attack_Slash9",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T15:09:35.711Z"
+    },
+    {
+      "id": "combat-master-30eb25c4486f5e68e256",
+      "name": "Anim_Tb_Attack_Slash5",
+      "status": "keep",
+      "note": "力量感很不错，这个一倍速正好",
+      "updated": "2026-09-27T15:11:46.725Z"
+    },
+    {
+      "id": "combat-master-38cb716005f9f62f42ec",
+      "name": "Anim_DSS3_Buff_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T15:14:14.364Z"
+    },
+    {
+      "id": "combat-master-3c8d3a0c2bc89d15c58e",
+      "name": "Anim_Tb_Attack_Slash8",
+      "status": "adjust",
+      "note": "需要左右镜像，拿武器的手从下方挥武器而非空手",
+      "updated": "2026-09-27T16:12:31.328Z"
+    },
+    {
+      "id": "combat-master-5556af40b127e2c65b3c",
+      "name": "Anim_Katana_Attack_Slash4",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:12:03.149Z"
+    },
+    {
+      "id": "combat-master-577f7516d930b2ed0ead",
+      "name": "Anim_SwordV2_Run_Forward",
+      "status": "adjust",
+      "note": "需要调整骨骼，现在有点像boss在佝偻着前进，可能是躯干中间骨骼节点间不够长？",
+      "updated": "2026-09-27T16:13:08.450Z"
+    },
+    {
+      "id": "combat-master-580d04b9810500c1b8a7",
+      "name": "Anim_SwordV2_Combo1_2",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:12:15.615Z"
+    },
+    {
+      "id": "combat-master-62404383534ae14396a3",
+      "name": "Anim_KT3_Combo_C_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:13:16.702Z"
+    },
+    {
+      "id": "combat-master-6d0ba7c3ad4d32ebe094",
+      "name": "Anim_SwordV2_Walk_Left",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:13:20.394Z"
+    },
+    {
+      "id": "combat-master-726691b0646213356b8e",
+      "name": "Anim_SwordV2_Combo1_1",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:13:23.978Z"
+    },
+    {
+      "id": "combat-master-78d089d7e75f6c48b25f",
+      "name": "Anim_Tb_Attack_Stab2",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:13:37.336Z"
+    },
+    {
+      "id": "combat-master-7b320512f62717bdb578",
+      "name": "Anim_PS_Standup_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:13:41.416Z"
+    },
+    {
+      "id": "combat-master-7baae188ebd7b7e36ea0",
+      "name": "Anim_SAS_Combo5_InPlace_3",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:13:48.473Z"
+    },
+    {
+      "id": "combat-master-7e92e8407ac955edd4d4",
+      "name": "Anim_Katana_Attack_Combo4",
+      "status": "keep",
+      "note": "下砸会有一个大范围击飞",
+      "updated": "2026-09-27T16:14:15.391Z"
+    },
+    {
+      "id": "combat-master-84ce175fcf57f9e3941f",
+      "name": "Anim_Katana_Attack_Combo5",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:14:23.651Z"
+    },
+    {
+      "id": "combat-master-8b884c23adbeeda4cbea",
+      "name": "Anim_DK_Combo_B02_RM",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:14:27.718Z"
+    },
+    {
+      "id": "combat-master-8dbbfe19c5e1ff8e0e88",
+      "name": "Anim_DSS3_Combo_B1_RM",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:14:45.500Z"
+    },
+    {
+      "id": "combat-master-951a7946e1f4971e6b95",
+      "name": "Anim_PS_Combo_C4_RM",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:14:49.840Z"
+    },
+    {
+      "id": "combat-master-aa3eaeb6caf946d2907c",
+      "name": "Anim_Tb_Attack_Slash3",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:14:56.033Z"
+    },
+    {
+      "id": "combat-master-ac52d04bfe390b2822b6",
+      "name": "Anim_PS_Hit_Front_Small_RM",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:15:11.139Z"
+    },
+    {
+      "id": "combat-master-ae0fb7554795bf22d20f",
+      "name": "Anim_DK_Combo_C01_RM",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:15:08.466Z"
+    },
+    {
+      "id": "combat-master-b05c145bc48d267a1ad9",
+      "name": "Anim_Sword_1H_Attack_Stab4",
+      "status": "keep",
+      "note": "向前戳出一道很长的裂地缝隙（缝隙里有血红色光芒），片刻后裂地缝隙爆炸造成击飞",
+      "updated": "2026-09-27T16:17:26.466Z"
+    },
+    {
+      "id": "combat-master-b786d0b86e8a5ac01cec",
+      "name": "Anim_Sword_1H_Attack_Jump1",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "combat-master-b9cf14ceb4253de3a06a",
+      "name": "Anim_Katana_Attack_Slash1",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:16:59.432Z"
+    },
+    {
+      "id": "combat-master-c957550748d3868b9d6d",
+      "name": "Anim_Tb_Attack_Jump1",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:17:55.135Z"
+    },
+    {
+      "id": "combat-master-dc0e5318f0e0ca0e97b2",
+      "name": "Anim_DK_Combo_A04_RM",
+      "status": "remove",
+      "note": "",
+      "updated": "2026-09-27T16:18:06.874Z"
+    },
+    {
+      "id": "combat-master-df81ad81cd2ce4829dc2",
+      "name": "Anim_Katana_Attack_Combo2",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:18:10.333Z"
+    },
+    {
+      "id": "combat-master-e04e545ae5e634c10286",
+      "name": "Anim_Tb_Attack_Slash4",
+      "status": "pending",
+      "note": ""
+    },
+    {
+      "id": "combat-master-e09b39ae22f314c7b2f7",
+      "name": "Anim_Tb_Attack_Slash1",
+      "status": "keep",
+      "note": "",
+      "updated": "2026-09-27T16:18:25.796Z"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+[
+  {
+    "id": "wd_black_tree_hero_01",
+    "profile": "black_tree",
+    "face_limit": 1000000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 900,
+    "prompt": "original dark fantasy colossal dead black tree in a ruined desert battlefield, ancient twisted trunk, sparse broken branches, deep fissures in the trunk prepared for separate golden emissive overlays, monumental silhouette, weathered bark, no recognizable franchise design, isolated asset, neutral studio lighting"
+  },
+  {
+    "id": "wd_tree_root_01",
+    "profile": "midground",
+    "face_limit": 450000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 720,
+    "prompt": "original dark fantasy dead tree roots fused with cracked sandstone and battlefield rubble, asymmetrical roots, weathered black wood and stone, modular environment prop, no characters, no text, neutral studio lighting"
+  },
+  {
+    "id": "wd_ruin_foreground_01",
+    "profile": "foreground",
+    "face_limit": 450000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 720,
+    "prompt": "original western fantasy war ruin fragment, broken stone gate and collapsed masonry, scorched edges, partially buried in sand, readable silhouette, modular environment prop, no text, no characters"
+  },
+  {
+    "id": "wd_war_debris_01",
+    "profile": "small_prop",
+    "face_limit": 220000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 600,
+    "prompt": "original battlefield debris prop pack, broken shields, snapped spear shafts, bent black iron fragments and scattered stone, dark fantasy ruin aesthetic, modular pieces, no text"
+  },
+  {
+    "id": "wd_war_banner_01",
+    "profile": "small_prop",
+    "face_limit": 220000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 600,
+    "prompt": "original tattered war banner on a broken pole, dark red and ash cloth, weathered metal fittings, fantasy battlefield relic, readable silhouette, no symbols copied from existing works, no text"
+  },
+  {
+    "id": "wd_torch_01",
+    "profile": "small_prop",
+    "face_limit": 180000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 600,
+    "prompt": "original ruined battlefield torch brazier, black iron and cracked stone base, suitable for a small warm flame light, dark fantasy environment prop, no text"
+  },
+  {
+    "id": "wd_player_visual_01",
+    "profile": "player",
+    "face_limit": 1000000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 900,
+    "prompt": "Original silver gray steel armored fantasy knight, compact agile adult warrior, etched cool silver plate over blackened chainmail, charcoal split cloth, no gold armor, restrained helmet crest, clear limbs in neutral A-pose, empty hands, no weapons, isolated full body with realistic human proportions"
+  },
+  {
+    "id": "wd_player_weapon_01",
+    "profile": "player_weapon",
+    "face_limit": 450000,
+    "texture_quality": "high",
+    "runtime_budget_seconds": 720,
+    "prompt": "One original practical knight sword, silver steel blade and weathered dark iron guard, charcoal leather grip, isolated full weapon, no gold blade, no body no text no pedestal"
+  }
+]

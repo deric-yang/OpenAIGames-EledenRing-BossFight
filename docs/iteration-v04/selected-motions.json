@@ -1,0 +1,1142 @@
+[
+  {
+    "id": "combat-master-1f42a02de2fa47077abd",
+    "name": "Anim_SAS_V2_ComboAttack03_03_IP",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV2/InPlace/Attack/Anim_SAS_V2_ComboAttack03_03_IP",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV2/InPlace/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:51:50.092Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-1f42a02de2fa47077abd",
+      "title": "Anim_SAS_V2_ComboAttack03_03_IP",
+      "group": "Combat Master / DynamicSwordAndShieldV2/InPlace/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_WSS2.glb",
+      "source_clip": "combat-master-1f42a02de2fa47077abd",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_WSS2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-8dbbfe19c5e1ff8e0e88",
+    "name": "Anim_DSS3_Combo_B1_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV3/Root/Attack/ComboAttack/Anim_DSS3_Combo_B1_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV3/Root/Attack/ComboAttack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "可以用于 Boss 连续被玩家攻击几次之后的一个反击动作，将玩家顶开，打出玩家的小硬直",
+      "usage": "",
+      "updated": "2026-09-27T05:06:20.904Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-8dbbfe19c5e1ff8e0e88",
+      "title": "Anim_DSS3_Combo_B1_RM",
+      "group": "Combat Master / DynamicSwordAndShieldV3/Root/Attack/ComboAttack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DSS3.glb",
+      "source_clip": "combat-master-8dbbfe19c5e1ff8e0e88",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DSS3.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-38cb716005f9f62f42ec",
+    "name": "Anim_DSS3_Buff_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV3/Root/Buff/Anim_DSS3_Buff_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShieldV3/Root/Buff",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "pending",
+      "note": "用于 BOSS 发狂怒吼。也是被玩家连续命中，或者是遭受玩家重击起身之后会进行这个动作，击退一定范围内的玩家，从而和玩家形成新一轮的立回；",
+      "usage": "",
+      "updated": "2026-09-27T05:07:54.133Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-38cb716005f9f62f42ec",
+      "title": "Anim_DSS3_Buff_RM",
+      "group": "Combat Master / DynamicSwordAndShieldV3/Root/Buff",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DSS3.glb",
+      "source_clip": "combat-master-38cb716005f9f62f42ec",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DSS3.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-0f39312e0f3f1824ade8",
+    "name": "Anim_Tb_Attack_Jump2",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Jump2",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:09:27.021Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-0f39312e0f3f1824ade8",
+      "title": "Anim_Tb_Attack_Jump2",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-0f39312e0f3f1824ade8",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-3c8d3a0c2bc89d15c58e",
+    "name": "Anim_Tb_Attack_Slash8",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash8",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "这个动作和 attack slash 4 一起形成 combo",
+      "usage": "",
+      "updated": "2026-09-27T05:09:20.794Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-3c8d3a0c2bc89d15c58e",
+      "title": "Anim_Tb_Attack_Slash8",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-3c8d3a0c2bc89d15c58e",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-e04e545ae5e634c10286",
+    "name": "Anim_Tb_Attack_Slash4",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash4",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:09:02.111Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-e04e545ae5e634c10286",
+      "title": "Anim_Tb_Attack_Slash4",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-e04e545ae5e634c10286",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-284267a9c91fe7194691",
+    "name": "Anim_Tb_Attack_Slash9",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash9",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:40.131Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-284267a9c91fe7194691",
+      "title": "Anim_Tb_Attack_Slash9",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-284267a9c91fe7194691",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-30eb25c4486f5e68e256",
+    "name": "Anim_Tb_Attack_Slash5",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash5",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:36.689Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-30eb25c4486f5e68e256",
+      "title": "Anim_Tb_Attack_Slash5",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-30eb25c4486f5e68e256",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-c957550748d3868b9d6d",
+    "name": "Anim_Tb_Attack_Jump1",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Jump1",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:19.044Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-c957550748d3868b9d6d",
+      "title": "Anim_Tb_Attack_Jump1",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-c957550748d3868b9d6d",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-78d089d7e75f6c48b25f",
+    "name": "Anim_Tb_Attack_Stab2",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Stab2",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:15.760Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-78d089d7e75f6c48b25f",
+      "title": "Anim_Tb_Attack_Stab2",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-78d089d7e75f6c48b25f",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-aa3eaeb6caf946d2907c",
+    "name": "Anim_Tb_Attack_Slash3",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash3",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:10.940Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-aa3eaeb6caf946d2907c",
+      "title": "Anim_Tb_Attack_Slash3",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-aa3eaeb6caf946d2907c",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-1630f9acdead00d74cc9",
+    "name": "Anim_Tb_Attack_Slash10",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash10",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:04.582Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-1630f9acdead00d74cc9",
+      "title": "Anim_Tb_Attack_Slash10",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-1630f9acdead00d74cc9",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-e09b39ae22f314c7b2f7",
+    "name": "Anim_Tb_Attack_Slash1",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack/Anim_Tb_Attack_Slash1",
+    "category": "/Game/CombatMasterAnimBundle/Animations/TwinSwordAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T05:08:05.983Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-e09b39ae22f314c7b2f7",
+      "title": "Anim_Tb_Attack_Slash1",
+      "group": "Combat Master / TwinSwordAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin.glb",
+      "source_clip": "combat-master-e09b39ae22f314c7b2f7",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-951a7946e1f4971e6b95",
+    "name": "Anim_PS_Combo_C4_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Attack/ComboAttack/Anim_PS_Combo_C4_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Attack/ComboAttack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:41:08.503Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-951a7946e1f4971e6b95",
+      "title": "Anim_PS_Combo_C4_RM",
+      "group": "Combat Master / PowerfulSwordAnims/RM/Attack/ComboAttack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_PowerfulSword.glb",
+      "source_clip": "combat-master-951a7946e1f4971e6b95",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_PowerfulSword.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-2671a40251ac813d8b61",
+    "name": "Anim_PS_Hit_Front_Middle_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit/Anim_PS_Hit_Front_Middle_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:42:35.648Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-2671a40251ac813d8b61",
+      "title": "Anim_PS_Hit_Front_Middle_RM",
+      "group": "Combat Master / PowerfulSwordAnims/RM/Hit",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_PowerfulSword.glb",
+      "source_clip": "combat-master-2671a40251ac813d8b61",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_PowerfulSword.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-ac52d04bfe390b2822b6",
+    "name": "Anim_PS_Hit_Front_Small_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit/Anim_PS_Hit_Front_Small_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:42:31.047Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-ac52d04bfe390b2822b6",
+      "title": "Anim_PS_Hit_Front_Small_RM",
+      "group": "Combat Master / PowerfulSwordAnims/RM/Hit",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_PowerfulSword.glb",
+      "source_clip": "combat-master-ac52d04bfe390b2822b6",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_PowerfulSword.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-7b320512f62717bdb578",
+    "name": "Anim_PS_Standup_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit/Anim_PS_Standup_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/PowerfulSwordAnims/RM/Hit",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:42:21.008Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-7b320512f62717bdb578",
+      "title": "Anim_PS_Standup_RM",
+      "group": "Combat Master / PowerfulSwordAnims/RM/Hit",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_PowerfulSword.glb",
+      "source_clip": "combat-master-7b320512f62717bdb578",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_PowerfulSword.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-7baae188ebd7b7e36ea0",
+    "name": "Anim_SAS_Combo5_InPlace_3",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShield/Attack/ComboAttack/InPlace/Anim_SAS_Combo5_InPlace_3",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShield/Attack/ComboAttack/InPlace",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:42:56.997Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-7baae188ebd7b7e36ea0",
+      "title": "Anim_SAS_Combo5_InPlace_3",
+      "group": "Combat Master / DynamicSwordAndShield/Attack/ComboAttack/InPlace",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DSAS.glb",
+      "source_clip": "combat-master-7baae188ebd7b7e36ea0",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DSAS.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-e07664ecc25243ebbfdc",
+    "name": "Anim_SAS_Combo2_InPlace_2",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShield/Attack/ComboAttack/InPlace/Anim_SAS_Combo2_InPlace_2",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicSwordAndShield/Attack/ComboAttack/InPlace",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "这个用于玩家对于 BOSS 进行处决",
+      "usage": "",
+      "updated": "2026-09-27T05:10:39.982Z"
+    },
+    "role": "player_execution",
+    "converted": {
+      "id": "combat-master-e07664ecc25243ebbfdc",
+      "title": "Anim_SAS_Combo2_InPlace_2",
+      "group": "Combat Master / DynamicSwordAndShield/Attack/ComboAttack/InPlace",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DSAS.glb",
+      "source_clip": "combat-master-e07664ecc25243ebbfdc",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DSAS.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-7e92e8407ac955edd4d4",
+    "name": "Anim_Katana_Attack_Combo4",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack/Anim_Katana_Attack_Combo4",
+    "category": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:45:23.360Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-7e92e8407ac955edd4d4",
+      "title": "Anim_Katana_Attack_Combo4",
+      "group": "Combat Master / KatanaAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Katana.glb",
+      "source_clip": "combat-master-7e92e8407ac955edd4d4",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Katana.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-df81ad81cd2ce4829dc2",
+    "name": "Anim_Katana_Attack_Combo2",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack/Anim_Katana_Attack_Combo2",
+    "category": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:45:08.931Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-df81ad81cd2ce4829dc2",
+      "title": "Anim_Katana_Attack_Combo2",
+      "group": "Combat Master / KatanaAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Katana.glb",
+      "source_clip": "combat-master-df81ad81cd2ce4829dc2",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Katana.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-b9cf14ceb4253de3a06a",
+    "name": "Anim_Katana_Attack_Slash1",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack/Anim_Katana_Attack_Slash1",
+    "category": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:44:57.126Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-b9cf14ceb4253de3a06a",
+      "title": "Anim_Katana_Attack_Slash1",
+      "group": "Combat Master / KatanaAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Katana.glb",
+      "source_clip": "combat-master-b9cf14ceb4253de3a06a",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Katana.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-5556af40b127e2c65b3c",
+    "name": "Anim_Katana_Attack_Slash4",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack/Anim_Katana_Attack_Slash4",
+    "category": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:44:46.633Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-5556af40b127e2c65b3c",
+      "title": "Anim_Katana_Attack_Slash4",
+      "group": "Combat Master / KatanaAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Katana.glb",
+      "source_clip": "combat-master-5556af40b127e2c65b3c",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Katana.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-84ce175fcf57f9e3941f",
+    "name": "Anim_Katana_Attack_Combo5",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack/Anim_Katana_Attack_Combo5",
+    "category": "/Game/CombatMasterAnimBundle/Animations/KatanaAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:44:34.640Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-84ce175fcf57f9e3941f",
+      "title": "Anim_Katana_Attack_Combo5",
+      "group": "Combat Master / KatanaAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Katana.glb",
+      "source_clip": "combat-master-84ce175fcf57f9e3941f",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Katana.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-b05c145bc48d267a1ad9",
+    "name": "Anim_Sword_1H_Attack_Stab4",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordCombatAnims/Attack/Anim_Sword_1H_Attack_Stab4",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordCombatAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:45:56.813Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-b05c145bc48d267a1ad9",
+      "title": "Anim_Sword_1H_Attack_Stab4",
+      "group": "Combat Master / HandsomeSwordCombatAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H.glb",
+      "source_clip": "combat-master-b05c145bc48d267a1ad9",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-b786d0b86e8a5ac01cec",
+    "name": "Anim_Sword_1H_Attack_Jump1",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordCombatAnims/Attack/Anim_Sword_1H_Attack_Jump1",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordCombatAnims/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:45:46.640Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-b786d0b86e8a5ac01cec",
+      "title": "Anim_Sword_1H_Attack_Jump1",
+      "group": "Combat Master / HandsomeSwordCombatAnims/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H.glb",
+      "source_clip": "combat-master-b786d0b86e8a5ac01cec",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-580d04b9810500c1b8a7",
+    "name": "Anim_SwordV2_Combo1_2",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Attack/ComboAttack/Anim_SwordV2_Combo1_2",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Attack/ComboAttack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:47:05.089Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-580d04b9810500c1b8a7",
+      "title": "Anim_SwordV2_Combo1_2",
+      "group": "Combat Master / HandsomeSwordAnimsV2/Attack/ComboAttack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H_V2.glb",
+      "source_clip": "combat-master-580d04b9810500c1b8a7",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H_V2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-726691b0646213356b8e",
+    "name": "Anim_SwordV2_Combo1_1",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Attack/ComboAttack/Anim_SwordV2_Combo1_1",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Attack/ComboAttack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:46:32.655Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-726691b0646213356b8e",
+      "title": "Anim_SwordV2_Combo1_1",
+      "group": "Combat Master / HandsomeSwordAnimsV2/Attack/ComboAttack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H_V2.glb",
+      "source_clip": "combat-master-726691b0646213356b8e",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H_V2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-577f7516d930b2ed0ead",
+    "name": "Anim_SwordV2_Run_Forward",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Locomotion/Anim_SwordV2_Run_Forward",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Locomotion",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:47:52.149Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-577f7516d930b2ed0ead",
+      "title": "Anim_SwordV2_Run_Forward",
+      "group": "Combat Master / HandsomeSwordAnimsV2/Locomotion",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H_V2.glb",
+      "source_clip": "combat-master-577f7516d930b2ed0ead",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H_V2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-6d0ba7c3ad4d32ebe094",
+    "name": "Anim_SwordV2_Walk_Left",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Locomotion/Anim_SwordV2_Walk_Left",
+    "category": "/Game/CombatMasterAnimBundle/Animations/HandsomeSwordAnimsV2/Locomotion",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:47:49.651Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-6d0ba7c3ad4d32ebe094",
+      "title": "Anim_SwordV2_Walk_Left",
+      "group": "Combat Master / HandsomeSwordAnimsV2/Locomotion",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_Sword_1H_V2.glb",
+      "source_clip": "combat-master-6d0ba7c3ad4d32ebe094",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_Sword_1H_V2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-198acccca5330d9c795e",
+    "name": "Anim_DK2_Combo_D1_IP",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV2/IP/Attack/Anim_DK2_Combo_D1_IP",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV2/IP/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:48:00.204Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-198acccca5330d9c795e",
+      "title": "Anim_DK2_Combo_D1_IP",
+      "group": "Combat Master / DynamicKatanaAnimsV2/IP/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_K2.glb",
+      "source_clip": "combat-master-198acccca5330d9c795e",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_K2.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-62404383534ae14396a3",
+    "name": "Anim_KT3_Combo_C_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Attack/Anim_KT3_Combo_C_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:49:14.909Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-62404383534ae14396a3",
+      "title": "Anim_KT3_Combo_C_RM",
+      "group": "Combat Master / DynamicKatanaAnimsV3/RootMotion/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_KatanaV3.glb",
+      "source_clip": "combat-master-62404383534ae14396a3",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_KatanaV3.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-1409c47c83223aac5e53",
+    "name": "Anim_KT3_Intro_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Intro/Anim_KT3_Intro_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Intro",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "作为 Boss，在中间切换成周旋立回状态时，以及开场时的一个动作",
+      "usage": "",
+      "updated": "2026-09-27T04:50:07.685Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-1409c47c83223aac5e53",
+      "title": "Anim_KT3_Intro_RM",
+      "group": "Combat Master / DynamicKatanaAnimsV3/RootMotion/Intro",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_KatanaV3.glb",
+      "source_clip": "combat-master-1409c47c83223aac5e53",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_KatanaV3.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-1f059a763b2ce804220f",
+    "name": "Anim_KT3_Walk_BR_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Locomotion/Anim_KT3_Walk_BR_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnimsV3/RootMotion/Locomotion",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:50:17.695Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-1f059a763b2ce804220f",
+      "title": "Anim_KT3_Walk_BR_RM",
+      "group": "Combat Master / DynamicKatanaAnimsV3/RootMotion/Locomotion",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_KatanaV3.glb",
+      "source_clip": "combat-master-1f059a763b2ce804220f",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_KatanaV3.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-8b884c23adbeeda4cbea",
+    "name": "Anim_DK_Combo_B02_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack/Anim_DK_Combo_B02_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:51:05.415Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-8b884c23adbeeda4cbea",
+      "title": "Anim_DK_Combo_B02_RM",
+      "group": "Combat Master / DynamicKatanaAnims/RootMotion/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DK.glb",
+      "source_clip": "combat-master-8b884c23adbeeda4cbea",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DK.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-f19e2a7d3ad551bf0341",
+    "name": "Anim_DK_Combo_A_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack/Anim_DK_Combo_A_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:50:56.907Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-f19e2a7d3ad551bf0341",
+      "title": "Anim_DK_Combo_A_RM",
+      "group": "Combat Master / DynamicKatanaAnims/RootMotion/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DK.glb",
+      "source_clip": "combat-master-f19e2a7d3ad551bf0341",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DK.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-ae0fb7554795bf22d20f",
+    "name": "Anim_DK_Combo_C01_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack/Anim_DK_Combo_C01_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:50:48.970Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-ae0fb7554795bf22d20f",
+      "title": "Anim_DK_Combo_C01_RM",
+      "group": "Combat Master / DynamicKatanaAnims/RootMotion/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DK.glb",
+      "source_clip": "combat-master-ae0fb7554795bf22d20f",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DK.glb",
+    "local_exists": true
+  },
+  {
+    "id": "combat-master-dc0e5318f0e0ca0e97b2",
+    "name": "Anim_DK_Combo_A04_RM",
+    "pack": "combat-master",
+    "kind": "motion",
+    "ue_class": "AnimSequence",
+    "ue_path": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack/Anim_DK_Combo_A04_RM",
+    "category": "/Game/CombatMasterAnimBundle/Animations/DynamicKatanaAnims/RootMotion/Attack",
+    "preview_status": "unreal-native",
+    "review": {
+      "status": "keep",
+      "note": "",
+      "usage": "",
+      "updated": "2026-09-27T04:50:37.463Z"
+    },
+    "role": "boss",
+    "converted": {
+      "id": "combat-master-dc0e5318f0e0ca0e97b2",
+      "title": "Anim_DK_Combo_A04_RM",
+      "group": "Combat Master / DynamicKatanaAnims/RootMotion/Attack",
+      "weapon": "none",
+      "raw": true,
+      "native": true,
+      "source_path": "res://assets/shared_combat_master/SK_Mannequin_DK.glb",
+      "source_clip": "combat-master-dc0e5318f0e0ca0e97b2",
+      "shared_pool": true
+    },
+    "local_glb": "asset-audition/shared-pool/processed/combat-master-glb/SK_Mannequin_DK.glb",
+    "local_exists": true
+  }
+]

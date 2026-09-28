@@ -1,0 +1,26 @@
+.godot/
+*.tmp
+*.part
+*.blend1
+builds/*
+qa/*.png
+qa/*.webm
+assets/source/**
+!assets/source/**/
+generation-records/tasks/*.json
+generation-records/hashes/*.json
+.env
+tools/cache/
+tools/font-venv/
+
+# Local credentials and generated artifacts
+.env.*
+!.env.example
+.DS_Store
+__pycache__/
+*.pyc
+node_modules/
+qa/
+
+venv/
+.venv/

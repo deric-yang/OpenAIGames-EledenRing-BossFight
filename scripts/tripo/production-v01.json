@@ -1,0 +1,163 @@
+[
+  {
+    "id": "player_silver_v01",
+    "image": "docs/concepts/v01/player-silver-apose.png",
+    "face_limit": 500000,
+    "seed": 9272601,
+    "role": "Silver gray knight, no weapon, A-pose; source mesh needs rig and animation review"
+  },
+  {
+    "id": "great_enemy_body_v01",
+    "face_limit": 800000,
+    "seed": 9272602,
+    "prompt": "One original dark fantasy enormous broad muscular warrior in symmetrical neutral A pose, arms separated from torso and hands empty, human biped anatomy, thick armored legs feet pointing forward, dark blackened iron plate armor with tarnished antique gold engravings, crown shaped closed helmet, heavy segmented pauldrons, short split burgundy waistcloth with no cape, no weapons, no pedestal, no other props. Powerful broad torso and arms, imposing fallen general, complete full body. Clear joints for rigging. Realistic worn PBR materials, original design."
+  },
+  {
+    "id": "great_enemy_blade_v01",
+    "face_limit": 150000,
+    "seed": 9272603,
+    "prompt": "One single enormous curved dark fantasy greatsword, black iron broad curved blade, sharpened silver cutting edge, aged gold engraved crossguard and pommel, long leather wrapped grip, ornamental but brutal massive silhouette, original fallen general weapon, full weapon isolated, no hand no body no stand no text. Physical weathered metallic PBR material, straight grip axis for attaching to hand."
+  },
+  {
+    "id": "war_relic_cluster_v01",
+    "face_limit": 250000,
+    "seed": 9272604,
+    "prompt": "One compact low mound of ruined medieval battlefield relics: three shattered iron shields, dented empty helmets, broken breastplate pieces, two snapped spear shafts and a bent sword, dusty dark iron with weathered bronze fittings, asymmetrical carefully readable cluster resting naturally on ground, no large terrain platform, no living character, no skulls, realistic tragic dark fantasy prop. Separate identifiable silhouettes, dusty sand collected in crevices."
+  },
+  {
+    "id": "great_enemy_greatsword_v02",
+    "face_limit": 180000,
+    "seed": 9272611,
+    "prompt": "One single perfectly STRAIGHT colossal slab greatsword, extremely broad rectangular solid iron blade with parallel straight edges and a short triangular point. Completely straight unbent blade and straight central handle, symmetrical frontal silhouette, no curve anywhere in the blade. Looks like an enormous thick heavy iron block, thick visible spine, dark blackened forged steel covered in dense intricate deeply engraved ancient geometric ornamental patterns, narrow aged silver bevels, small heavy antique gold crossguard, compact single hand leather grip suitable for a giant warrior, heavy pommel. Blade length four times handle length, blade width about one fifth blade length. Solid brutal weight, dark realistic PBR metal, complete isolated weapon, no person no stand no scene. NOT a scimitar, NOT a sickle, NOT a crescent, NOT a katana, no bent twisted or wavy shape."
+  },
+  {
+    "id": "sword_grave_cluster_v02",
+    "face_limit": 180000,
+    "seed": 9272612,
+    "prompt": "One small irregular dark fantasy sword grave cluster: seven old straight medieval longswords planted vertically and at slight different angles into a low thin patch of dusty sand, points buried downward, hilts and crossguards clearly visible on top. Different blade lengths and crossguard designs. Mostly standing straight, one broken blade, two tiny armor fragments on ground. Tall lonely upright sword silhouettes, weathered blackened steel and dull bronze fittings, mournful abandoned battlefield. No sword rack, no fence, no large pedestal, no people, no skulls, no architecture. Clearly separated long straight blades, realistic worn metal PBR game prop."
+  },
+  {
+    "id": "polearm_grave_cluster_v02",
+    "face_limit": 180000,
+    "seed": 9272613,
+    "prompt": "One irregular sparse medieval battlefield polearm grave cluster: three very tall long straight wooden spears with iron leaf spearheads and two tall halberds with distinct axe and spike heads planted upright into a very low thin patch of sand. Five clearly separated long shafts at slightly different angles, iron heads high in the air, varied heights, a single broken round shield lying at base. Long thin vertical silhouettes at least three times taller than shield width. Weathered dark wood, corroded iron, ancient tragic dark fantasy, realistic PBR game prop, no flags, no weapon rack, no fence, no people, no large terrain pedestal."
+  },
+  {
+    "id": "golden_tree_v01",
+    "face_limit": 700000,
+    "seed": 9272605,
+    "prompt": "One colossal ancient gnarled tree, massive tapering blackened trunk, broad sweeping asymmetrical crown of bare branches, weathered bark split by narrow antique golden veins, great spreading roots visible at base, monumental mournful dark fantasy silhouette, isolated single tree, no leaves no landscape no cloth no buildings no characters no pedestal. PBR dark wood and subdued gold fissure surfaces, readable branch hierarchy, realistic natural structure."
+  },
+  {
+    "id": "golden_respawn_sigil_v03",
+    "face_limit": 160000,
+    "seed": 9272631,
+    "prompt": "One ornate circular golden resurrection sigil lying flat on the ground, very low relief gilded bronze ritual floor medallion, intricate concentric rings of ancient angular runic glyphs, interlaced fine filigree and radial sunburst paths, small central spiral sun symbol. A broad circular disc less than one twentieth its diameter in thickness, weathered antique gold with dark recessed carved patterns and bright gold raised lines. Flat top-facing ceremonial rune platform, no tall pedestal, no stairs, no walls, no candles, no people, no letters or readable words. Original mournful dark fantasy PBR game prop, isolated complete circle."
+  },
+  {
+    "id": "old_general_v04",
+    "image": "docs/concepts/v04/general-apose.png",
+    "face_limit": 350000,
+    "seed": 9272641,
+    "role": "User-reference old armored general, feather cloak, empty hands; rig separately, banner polearm separate"
+  },
+  {
+    "id": "silver_knight_v04",
+    "image": "docs/concepts/v04/knight-apose.png",
+    "face_limit": 250000,
+    "seed": 9272642,
+    "role": "Silver gray cloaked knight, empty hands for rigging"
+  },
+  {
+    "id": "knight_longsword_v04",
+    "image": "docs/concepts/v04/knight-sword.png",
+    "face_limit": 90000,
+    "seed": 9272643,
+    "role": "Straight silver longsword matching reference; curved guard round pommel"
+  },
+  {
+    "id": "banner_polearm_v04",
+    "image": "docs/concepts/v04/banner-polearm.png",
+    "face_limit": 120000,
+    "seed": 9272644,
+    "role": "Rigid banner spear; cloth is separate skinned mesh"
+  },
+  {
+    "id": "old_general_v04_rigcheck",
+    "operation": "rig-check",
+    "source": "old_general_v04"
+  },
+  {
+    "id": "old_general_v04_rigged",
+    "operation": "rig",
+    "source": "old_general_v04"
+  },
+  {
+    "id": "silver_knight_v04_rigcheck",
+    "operation": "rig-check",
+    "source": "silver_knight_v04"
+  },
+  {
+    "id": "silver_knight_v04_rigged",
+    "operation": "rig",
+    "source": "silver_knight_v04"
+  },
+  {
+    "id": "broken_war_bow_v04",
+    "face_limit": 70000,
+    "seed": 9272645,
+    "prompt": "One abandoned broken medieval war longbow lying on ground, asymmetrical dark weathered wood curved bow limbs with a snapped limb and slack frayed string, leather grip and two loose broken arrows next to bow, dusty sand worn realistic PBR, dark fantasy battlefield debris prop, no base no pedestal no ground mesh no people no text, clearly recognizable longbow silhouette."
+  },
+  {
+    "id": "fallen_soldier_relic_v04",
+    "face_limit": 110000,
+    "seed": 9272646,
+    "prompt": "One long abandoned fallen medieval armored soldier remains lying horizontally on his side, corroded dark iron empty helmet and shattered breastplate with torn dusty gray cloth, bent armored arms and legs, half buried skeleton traces, ancient dry battlefield relic, tragic dark fantasy realistic PBR game prop, no fresh blood no exposed organs, no large ground platform no pedestal no standing figure no text. Complete prone body silhouette with weathered broken shield beside torso, dusty black iron dull bronze and faded gray fabric."
+  },
+  {
+    "id": "ruined_ionic_column_v05",
+    "face_limit": 40000,
+    "seed": 9272651,
+    "prompt": "One isolated ancient ruined Ionic stone column game prop, classical fluted limestone shaft with authentic paired spiral volute capital, upper third brutally fractured asymmetrically, chipped weathered edges, missing chunks exposing rough pale sandstone, eroded carvings, subtle ancient ochre dust in crevices, a broken part of the volute survives. Short thick sturdy pillar stump with readable monumental silhouette. No terrain base, no pedestal plinth, no vegetation, no people, no text. Realistic PBR low polygon game asset, extremely old buried battlefield architecture."
+  },
+  {
+    "id": "ruined_stone_wall_v05",
+    "face_limit": 45000,
+    "seed": 9272652,
+    "prompt": "One isolated wide broken ancient limestone fortification wall segment, about twice as wide as tall, massive fitted ashlar sandstone masonry blocks with irregular collapsed upper edge, large gap broken into one side, chipped eroded corners, subtle carved Greek classical geometric molding on two surviving stones, ochre sand dust in cracks, desaturated warm grey stone. Low polygon realistic PBR dark fantasy battlefield ruin. Bottom flat for half burying into sand. No intact building, no arch doorway, no terrain platform, no plants no characters no text, one modular wall."
+  },
+  {
+    "id": "fallen_mound_v06_1",
+    "face_limit": 10000,
+    "seed": 9282601,
+    "prompt": "An elongated irregular low mound of fallen medieval armored soldiers, overlapping empty battered breastplates, collapsed limbs in dusty tattered cloth, two visible closed helmets, exhausted ancient battlefield silhouette, all lying horizontally. Single isolated game environment prop, no pedestal or large ground plane. Non-graphic, no blood, no exposed organs. Muted charcoal gray and dusty brown, very simple matte textures, low polygon mesh, readable shape, no repeated identical bodies, mournful realistic dark fantasy."
+  },
+  {
+    "id": "fallen_mound_v06_2",
+    "face_limit": 10000,
+    "seed": 9282602,
+    "prompt": "A broad asymmetrical heap of desiccated fallen soldiers in ragged gray robes, tangled slender limbs and partial rusted armor, one outstretched arm and a broken shield, low ground silhouette, no standing figures. Single isolated game environment prop, no pedestal or large ground plane. Non-graphic, no blood, no exposed organs. Muted charcoal gray and dusty brown, very simple matte textures, low polygon mesh, readable shape, no repeated identical bodies, mournful realistic dark fantasy."
+  },
+  {
+    "id": "fallen_mound_v06_3",
+    "face_limit": 10000,
+    "seed": 9282603,
+    "prompt": "A sparse flattened group of fallen armored warriors partly buried in sand, one curled body and one prone figure crossing diagonally, broken helmets and dusty shrouds, uneven organic silhouette. Single isolated game environment prop, no pedestal or large ground plane. Non-graphic, no blood, no exposed organs. Muted charcoal gray and dusty brown, very simple matte textures, low polygon mesh, readable shape, no repeated identical bodies, mournful realistic dark fantasy."
+  },
+  {
+    "id": "silver_knight_capeless_v09",
+    "seed": 9272909,
+    "face_limit": 32000,
+    "prompt": "Full body realistic dark fantasy medieval knight, silver and cold grey ornate engraved plate armor, closed visor helmet, modest raven-feather collar at shoulders, segmented steel breastplate and complete metal backplate, fitted chainmail joints, articulated armored gauntlets, steel greaves and boots, small heraldic motifs on waist belt. NO CAPE, NO CLOAK, NO MANTLE hanging behind, NO hanging cloth, NO skirt or long tabard, NO wings. Fully exposed articulated armored legs with complete rear armor. Neutral symmetrical A pose arms 35 degrees away from body, both empty hands, no weapons, separated legs, strong humanoid proportions. Worn battle patina, realistic sculpted hard-surface armor, PBR silver metal, charcoal leather underlayer, no gold trim. Single isolated game-ready character, complete anatomy, feet visible, plain background."
+  },
+  {
+    "id": "silver_knight_capeless_v09_rigcheck",
+    "operation": "rig-check",
+    "source": "silver_knight_capeless_v09"
+  },
+  {
+    "id": "silver_knight_capeless_v09_rigged",
+    "operation": "rig",
+    "source": "silver_knight_capeless_v09"
+  }
+]

@@ -1,0 +1,15 @@
+#!/bin/sh
+# Project-local launcher for the external mcp-for-blender distribution.
+# Keep the dependency outside the repository and provide its path explicitly.
+set -eu
+
+command_path="${BLENDER_MCP_COMMAND:-}"
+if [ -z "$command_path" ]; then
+    printf '%s\n' "BLENDER_MCP_COMMAND is required; set it to an executable mcp-for-blender command." >&2
+    exit 78
+fi
+if [ ! -x "$command_path" ]; then
+    printf '%s\n' "BLENDER_MCP_COMMAND is not executable: $command_path" >&2
+    exit 78
+fi
+exec "$command_path" "$@"

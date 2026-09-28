@@ -1,0 +1,12 @@
+{
+  "mcpServers": {
+    "weeping-dunes-blender": {
+      "command": "/Users/yangjianwen/Documents/aistudio/Gamebench/projects/gilded-ruin-boss/tools/blender-mcp/mcp-for-blender",
+      "env": {
+        "BLENDER_HOST": "127.0.0.1",
+        "BLENDER_PORT": "9877",
+        "BLENDER_MCP_DISABLE_TELEMETRY": "1"
+      }
+    }
+  }
+}

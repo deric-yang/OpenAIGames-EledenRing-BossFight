@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="zh-CN">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>王骸的守望者 · 动作审阅</title><link rel="stylesheet" href="board.css"></head>
+<body>
+<header><div><span class="eyebrow">ANCIENT BATTLEFIELD · MOTION REVIEW 06</span><h1>王骸的守望者</h1><p>逐招审阅，留下足够沉重、有力量感的动作。</p></div><div class="actions"><a href="/" target="_blank">进入战场 ↗</a><button id="export">导出审阅 JSON</button></div></header>
+<main>
+<aside><div class="filters"><input id="search" type="search" placeholder="搜索动作名称或备注" aria-label="搜索动作"><select id="category" aria-label="动作分类"><option value="all">全部动作</option><option value="attack">攻击</option><option value="movement">移动与待机</option><option value="reaction">受击与处决姿态</option><option value="other">怒吼与登场</option></select><select id="filter" aria-label="审阅状态"><option value="all">全部审阅状态</option><option value="pending">待审阅</option><option value="keep">保留</option><option value="remove">移除</option><option value="adjust">需调整</option></select></div><p id="counts" role="status"></p><nav id="motions" aria-label="Boss 动作清单"></nav></aside>
+<section>
+<div class="viewer"><iframe id="preview" src="/?motion-review=1" title="游戏内真实 Boss、武器与战旗动作预览" allow="autoplay; fullscreen"></iframe><span id="loading">正在载入游戏场景…</span></div>
+<div class="transport"><button id="play">暂停</button><button id="replay">重播</button><select id="rate" aria-label="播放速度"><option value="0.25">0.25×</option><option value="0.5">0.5×</option><option value="1" selected>1×</option></select><label>定位<input id="seek" type="range" min="0" max="100" value="0" aria-label="动作时间定位"></label><span>中键拖动旋转 · 滚轮缩放</span><span id="actual" role="status">等待实际动作回执</span></div>
+<div class="detail"><p class="eyebrow" id="group"></p><h2 id="name"></h2><p id="description"></p><p class="source-note" id="source-note"></p><div class="decisions" role="group" aria-label="当前动作审阅决定"><button data-status="keep">保留</button><button data-status="remove">移除</button><button data-status="adjust">需调整</button><button data-status="pending">待定</button></div><label for="note">这招的节奏、力量感与用途</label><textarea id="note" rows="3" placeholder="例如：保留，作为慢速横扫；收招需要再拉长一点。"></textarea><p id="saved" role="status"></p></div>
+<footer>已应用你的 14 项移除决定；突刺与处决已镜像至玩家持剑手。看板标记保存在当前浏览器，导出 JSON 后可用于下一轮整合；标记不会即时修改游戏。本轮已加入裂地、砂石、红光及逐招范围判定。</footer>
+</section>
+</main><dialog id="export-dialog"><h2>审阅结果</h2><p>可直接复制下方 JSON；普通浏览器也可点击下载。</p><textarea id="export-text" rows="14" readonly aria-label="导出的审阅 JSON"></textarea><div class="actions"><button id="copy-export">复制 JSON</button><a id="download-export" download="warden-motion-review-v06.json">下载文件</a><button id="close-export">关闭</button></div><p id="copy-state" role="status"></p></dialog><script type="module" src="board.mjs"></script>
+</body></html>

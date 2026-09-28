@@ -1,0 +1,262 @@
+[
+  {
+    "id": "Sword_Idle",
+    "name": "持枪待机",
+    "duration": 1.66666662693024,
+    "group": "movement",
+    "use": "移动 / 待机",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "Warden_Kneel_Enter",
+    "name": "单膝跪下 · 进入处决窗口",
+    "duration": 0.75,
+    "group": "reaction",
+    "use": "受击 / 恢复",
+    "description": "本轮在目标骨架上制作的单膝跪姿及过渡，不是原受击动作的末帧停顿。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "Warden_Kneel_Hold",
+    "name": "单膝跪地 · 等待处决",
+    "duration": 2,
+    "group": "reaction",
+    "use": "受击 / 恢复",
+    "description": "本轮在目标骨架上制作的单膝跪姿及过渡，不是原受击动作的末帧停顿。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "Warden_Rise",
+    "name": "支撑起身 · 处决超时恢复",
+    "duration": 1.25,
+    "group": "reaction",
+    "use": "受击 / 恢复",
+    "description": "本轮在目标骨架上制作的单膝跪姿及过渡，不是原受击动作的末帧停顿。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "combat-master-1409c47c83223aac5e53",
+    "name": "Anim_KT3_Intro_RM",
+    "duration": 1.18333327770233,
+    "group": "other",
+    "use": "怒吼 / 登场",
+    "description": "登场在游戏中 0.75×，已加入先慢后快的非线性节奏。",
+    "note": "需要慢一点来突出这一下的力量感。首先整体会慢一点，可以慢 25%, 其次就是可以先慢后快，做一个非线性的动画变化",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "combat-master-1630f9acdead00d74cc9",
+    "name": "Anim_Tb_Attack_Slash10",
+    "duration": 2.53333330154419,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.46；收招 1.3s。",
+    "note": "现在的一倍速反而正好合适，可以这样改它动作的整体长度",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-198acccca5330d9c795e",
+    "name": "Anim_DK2_Combo_D1_IP",
+    "duration": 1.60000002384186,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "这个也一倍速正好",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-1f059a763b2ce804220f",
+    "name": "Anim_KT3_Walk_BR_RM",
+    "duration": 0.999999940395355,
+    "group": "movement",
+    "use": "移动 / 待机",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-1f42a02de2fa47077abd",
+    "name": "Anim_SAS_V2_ComboAttack03_03_IP",
+    "duration": 1.20000004768372,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-2671a40251ac813d8b61",
+    "name": "Anim_PS_Hit_Front_Middle_RM",
+    "duration": 0.5,
+    "group": "reaction",
+    "use": "受击 / 恢复",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-30eb25c4486f5e68e256",
+    "name": "Anim_Tb_Attack_Slash5",
+    "duration": 2.86666655540466,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8.7m，伤害点 0.46；收招 1.9s。",
+    "note": "力量感很不错，这个一倍速正好",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-38cb716005f9f62f42ec",
+    "name": "Anim_DSS3_Buff_RM",
+    "duration": 1.08333337306976,
+    "group": "other",
+    "use": "怒吼 / 登场",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-3c8d3a0c2bc89d15c58e",
+    "name": "Anim_Tb_Attack_Slash8",
+    "duration": 2.06666660308838,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.5；收招 1.3s。",
+    "note": "需要左右镜像，拿武器的手从下方挥武器而非空手",
+    "previousDecision": "adjust"
+  },
+  {
+    "id": "combat-master-577f7516d930b2ed0ead",
+    "name": "Anim_SwordV2_Run_Forward",
+    "duration": 0.683333337306976,
+    "group": "movement",
+    "use": "移动 / 待机",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "需要调整骨骼，现在有点像boss在佝偻着前进，可能是躯干中间骨骼节点间不够长？",
+    "previousDecision": "adjust"
+  },
+  {
+    "id": "combat-master-62404383534ae14396a3",
+    "name": "Anim_KT3_Combo_C_RM",
+    "duration": 2.46666669845581,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-6d0ba7c3ad4d32ebe094",
+    "name": "Anim_SwordV2_Walk_Left",
+    "duration": 0.999999940395355,
+    "group": "movement",
+    "use": "移动 / 待机",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-726691b0646213356b8e",
+    "name": "Anim_SwordV2_Combo1_1",
+    "duration": 1.86666667461395,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-7b320512f62717bdb578",
+    "name": "Anim_PS_Standup_RM",
+    "duration": 1.10000002384186,
+    "group": "reaction",
+    "use": "受击 / 恢复",
+    "description": "使用实际重映射的 Boss 骨架，战旗和武器随挂点同步运动。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-7e92e8407ac955edd4d4",
+    "name": "Anim_Katana_Attack_Combo4",
+    "duration": 3.93333339691162,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 disc，范围 7.2m，伤害点 0.38 / 0.72；收招 2.25s。",
+    "note": "下砸会有一个大范围击飞",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-8dbbfe19c5e1ff8e0e88",
+    "name": "Anim_DSS3_Combo_B1_RM",
+    "duration": 1.08333337306976,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-b05c145bc48d267a1ad9",
+    "name": "Anim_Sword_1H_Attack_Stab4",
+    "duration": 1.70000004768372,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 lane，范围 12m，伤害点 0.45；收招 2s。",
+    "note": "向前戳出一道很长的裂地缝隙（缝隙里有血红色光芒），片刻后裂地缝隙爆炸造成击飞",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-b786d0b86e8a5ac01cec",
+    "name": "Anim_Sword_1H_Attack_Jump1",
+    "duration": 1.54999995231628,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 disc，范围 5.8m，伤害点 0.64；收招 2.2s。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "combat-master-b9cf14ceb4253de3a06a",
+    "name": "Anim_Katana_Attack_Slash1",
+    "duration": 1.89999997615814,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.46；收招 1.3s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-df81ad81cd2ce4829dc2",
+    "name": "Anim_Katana_Attack_Combo2",
+    "duration": 2.26666665077209,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.34 / 0.65；收招 1.65s。",
+    "note": "",
+    "previousDecision": "keep"
+  },
+  {
+    "id": "combat-master-e04e545ae5e634c10286",
+    "name": "Anim_Tb_Attack_Slash4",
+    "duration": 2.20000004768372,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.46；收招 1.3s。",
+    "note": "",
+    "previousDecision": "pending"
+  },
+  {
+    "id": "combat-master-e09b39ae22f314c7b2f7",
+    "name": "Anim_Tb_Attack_Slash1",
+    "duration": 1.79999995231628,
+    "group": "attack",
+    "use": "攻击",
+    "description": "V06 使用审阅后招式；常规攻击 1×，每招独立范围判定及恢复停顿。 判定 sector，范围 8m，伤害点 0.46；收招 1.3s。",
+    "note": "",
+    "previousDecision": "keep"
+  }
+]

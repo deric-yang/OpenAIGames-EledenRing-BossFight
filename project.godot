@@ -1,0 +1,36 @@
+; Gilded Ruin Boss — independent Godot slice
+; Godot 4.7.2 / Compatibility renderer baseline
+config_version=5
+
+[application]
+config/name="古战场遗迹 · Ancient Battlefield"
+run/main_scene="res://scenes/boot.tscn"
+config/features=PackedStringArray("4.7", "GL Compatibility")
+
+[display]
+window/size/viewport_width=1280
+window/size/viewport_height=720
+window/size/window_width_override=1280
+window/size/window_height_override=720
+window/stretch/mode="canvas_items"
+
+[rendering]
+renderer/rendering_method="gl_compatibility"
+renderer/rendering_method.mobile="gl_compatibility"
+anti_aliasing/quality/msaa_3d=1
+
+[physics]
+common/physics_ticks_per_second=60
+
+[input]
+move_left={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":65)]}
+move_right={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":68)]}
+move_forward={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":87)]}
+move_back={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":83)]}
+attack={"deadzone": 0.5, "events": [Object(InputEventMouseButton,"button_index":1), Object(InputEventKey,"physical_keycode":74)]}
+roll={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":32)]}
+reset_encounter={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":82)]}
+lock_on={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":4194306)]}
+sprint={"deadzone": 0.5, "events": [Object(InputEventKey,"physical_keycode":4194325)]}
+
+heavy_attack={"deadzone": 0.5, "events": [Object(InputEventMouseButton,"button_index":2), Object(InputEventKey,"physical_keycode":75)]}
