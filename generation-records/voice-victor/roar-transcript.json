@@ -1,0 +1,156 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Kneel! Even the dead have not been granted leave to rise",
+  "words": [
+    {
+      "text": "Kneel!",
+      "start": 0.16,
+      "end": 0.7,
+      "type": "word",
+      "logprob": -0.01209591608486941
+    },
+    {
+      "text": " ",
+      "start": 0.7,
+      "end": 0.7,
+      "type": "spacing",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": "Even",
+      "start": 1.56,
+      "end": 1.9,
+      "type": "word",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": " ",
+      "start": 1.9,
+      "end": 1.96,
+      "type": "spacing",
+      "logprob": -2.7418097943154862e-06
+    },
+    {
+      "text": "the",
+      "start": 1.96,
+      "end": 2.04,
+      "type": "word",
+      "logprob": -2.7418097943154862e-06
+    },
+    {
+      "text": " ",
+      "start": 2.04,
+      "end": 2.2,
+      "type": "spacing",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": "dead",
+      "start": 2.2,
+      "end": 2.58,
+      "type": "word",
+      "logprob": -3.099436753473128e-06
+    },
+    {
+      "text": " ",
+      "start": 2.58,
+      "end": 2.94,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "have",
+      "start": 2.94,
+      "end": 3.14,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 3.14,
+      "end": 3.2,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "not",
+      "start": 3.2,
+      "end": 3.48,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 3.48,
+      "end": 3.52,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "been",
+      "start": 3.52,
+      "end": 3.7,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 3.7,
+      "end": 3.84,
+      "type": "spacing",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": "granted",
+      "start": 3.84,
+      "end": 4.44,
+      "type": "word",
+      "logprob": -5.245195097813848e-06
+    },
+    {
+      "text": " ",
+      "start": 4.44,
+      "end": 4.54,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "leave",
+      "start": 4.54,
+      "end": 5.12,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 5.12,
+      "end": 5.54,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "to",
+      "start": 5.54,
+      "end": 5.68,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 5.68,
+      "end": 5.86,
+      "type": "spacing",
+      "logprob": -4.291525328881107e-06
+    },
+    {
+      "text": "rise",
+      "start": 5.86,
+      "end": 6.82,
+      "type": "word",
+      "logprob": -4.291525328881107e-06
+    }
+  ],
+  "transcription_id": "JUe9ytR5JvaDuikAShG2",
+  "audio_duration_secs": 6.88
+}

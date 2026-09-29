@@ -1,0 +1,114 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Another pair of hands reaching for the crown",
+  "words": [
+    {
+      "text": "Another",
+      "start": 0.12,
+      "end": 0.46,
+      "type": "word",
+      "logprob": -0.0009197533945553005
+    },
+    {
+      "text": " ",
+      "start": 0.46,
+      "end": 0.56,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "pair",
+      "start": 0.56,
+      "end": 0.84,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 0.84,
+      "end": 0.88,
+      "type": "spacing",
+      "logprob": 0.0
+    },
+    {
+      "text": "of",
+      "start": 0.88,
+      "end": 1.0,
+      "type": "word",
+      "logprob": 0.0
+    },
+    {
+      "text": " ",
+      "start": 1.0,
+      "end": 1.04,
+      "type": "spacing",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": "hands",
+      "start": 1.04,
+      "end": 1.78,
+      "type": "word",
+      "logprob": -1.311301275563892e-06
+    },
+    {
+      "text": " ",
+      "start": 1.78,
+      "end": 1.78,
+      "type": "spacing",
+      "logprob": -0.004095263313502073
+    },
+    {
+      "text": "reaching",
+      "start": 2.7,
+      "end": 3.2,
+      "type": "word",
+      "logprob": -0.004095263313502073
+    },
+    {
+      "text": " ",
+      "start": 3.2,
+      "end": 3.24,
+      "type": "spacing",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": "for",
+      "start": 3.24,
+      "end": 3.34,
+      "type": "word",
+      "logprob": -4.768370445162873e-07
+    },
+    {
+      "text": " ",
+      "start": 3.34,
+      "end": 3.38,
+      "type": "spacing",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": "the",
+      "start": 3.38,
+      "end": 3.48,
+      "type": "word",
+      "logprob": -5.960462772236497e-07
+    },
+    {
+      "text": " ",
+      "start": 3.48,
+      "end": 3.54,
+      "type": "spacing",
+      "logprob": -0.00017963226127903908
+    },
+    {
+      "text": "crown",
+      "start": 3.54,
+      "end": 4.0,
+      "type": "word",
+      "logprob": -0.00017963226127903908
+    }
+  ],
+  "transcription_id": "FVzgf1gniMImOvwz7iAV",
+  "audio_duration_secs": 4.08
+}

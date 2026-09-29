@@ -8,6 +8,7 @@ const SKIP_FADE := 0.3
 const RETURN_FADE := 0.45
 var game: Node3D
 var active := false
+var waiting := false
 var elapsed := 0.0
 var hold_time := 0.0
 var escape_down := false
@@ -107,6 +108,11 @@ func setup(owner_game: Node3D) -> void:
 
 func start() -> void:
     if active or game.review_dashboard: return
+    # Use exactly the same prop and hand pose that the player saw while approaching.
+    if not waiting or not anchor.is_equal_approx(game.boss.global_transform):
+        prepare_waiting()
+    waiting = false
+    prop.grains.show()
     active = true
     elapsed = 0.0
     hold_time = 0.0
@@ -134,19 +140,6 @@ func start() -> void:
     game.player.velocity = Vector3.ZERO
     game.boss.velocity = Vector3.ZERO
     game.player.idle()
-    game.boss.idle()
-    game.boss.avatar.blend_left = 0.0
-    game.boss.avatar.tick(0.0)
-    upright_pose.clear()
-    for i in game.boss.avatar.rig.get_bone_count():
-        upright_pose.append(game.boss.avatar.rig.get_bone_pose(i))
-    game.boss.action("Warden_Kneel_Hold", "down")
-    game.boss.avatar.blend_left = 0.0
-    game.boss.avatar.tick(0.1)
-    kneel_pose.clear()
-    for i in game.boss.avatar.rig.get_bone_count():
-        kneel_pose.append(game.boss.avatar.rig.get_bone_pose(i))
-    anchor = game.boss.global_transform
     game.player.avatar.model.hide()
     game.player.weapon.hide()
     game.boss.weapon.hide()
@@ -156,6 +149,40 @@ func start() -> void:
     game.camera_director.reset_execution()
     game.camera_director.set_process(false)
     game.camera_director.set_process_unhandled_input(false)
+    sand_audio = AudioStreamPlayer.new()
+    sand_audio.stream = load("res://assets/runtime/audio/v04/player_steps_loop_0.wav").duplicate()
+    if sand_audio.stream is AudioStreamWAV: sand_audio.stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
+    sand_audio.pitch_scale = 1.18
+    sand_audio.volume_db = -60
+    stage_root.add_child(sand_audio)
+    if game.audio.ambient: sand_audio.play()
+    canvas.show()
+    grade.show()
+    hint.show()
+    progress.value = 0
+    camera.make_current()
+    sample(0.0)
+    set_process(true)
+
+func prepare_waiting() -> void:
+    clear_set()
+    waiting = true
+    game.boss.velocity = Vector3.ZERO
+    game.boss.idle()
+    game.boss.avatar.blend_left = 0.0
+    game.boss.avatar.tick(0.0)
+    upright_pose.clear()
+    for i in game.boss.avatar.rig.get_bone_count():
+        upright_pose.append(game.boss.avatar.rig.get_bone_pose(i))
+    game.boss.action("Warden_Kneel_Hold", "ceremony")
+    game.boss.avatar.blend_left = 0.0
+    game.boss.avatar.tick(0.1)
+    kneel_pose.clear()
+    for i in game.boss.avatar.rig.get_bone_count():
+        kneel_pose.append(game.boss.avatar.rig.get_bone_pose(i))
+    anchor = game.boss.global_transform
+    game.boss.weapon.hide()
+    game.boss.trail.clear()
     stage_root = Node3D.new()
     stage_root.name = "CrownIntroSet"
     add_child(stage_root)
@@ -177,20 +204,33 @@ func start() -> void:
     key.omni_attenuation = 0.9
     stage_root.add_child(key)
     key.global_position = anchor * Vector3(3.5, 7.0, 4.0)
-    sand_audio = AudioStreamPlayer.new()
-    sand_audio.stream = load("res://assets/runtime/audio/v04/player_steps_loop_0.wav").duplicate()
-    if sand_audio.stream is AudioStreamWAV: sand_audio.stream.loop_mode = AudioStreamWAV.LOOP_FORWARD
-    sand_audio.pitch_scale = 1.18
-    sand_audio.volume_db = -60
-    stage_root.add_child(sand_audio)
-    if game.audio.ambient: sand_audio.play()
-    canvas.show()
-    grade.show()
-    hint.show()
-    progress.value = 0
-    camera.make_current()
-    sample(0.0)
-    set_process(true)
+    prop.sample(0.0)
+    prop.grains.hide()
+    pose_hands(0.0)
+    if game.boss.eyes:
+        game.boss.eyes.attachment.hide()
+        game.boss.eyes.history.clear()
+        game.boss.eyes.streak.clear_surfaces()
+
+func clear_set() -> void:
+    if is_instance_valid(stage_root):
+        stage_root.hide()
+        stage_root.queue_free()
+    stage_root = null
+    prop = null
+    sand_audio = null
+
+func cancel_waiting() -> void:
+    # Developer motion-review / free-combat shortcuts bypass the ceremony deliberately.
+    if not waiting: return
+    waiting = false
+    clear_set()
+    game.boss.idle()
+    game.boss.avatar.blend_left = 0
+    game.boss.avatar.tick(0)
+    game.boss.weapon.tick(0)
+    game.boss.weapon.show()
+    if game.boss.eyes: game.boss.eyes.attachment.show()
 
 func world_point(local: Vector3) -> Vector3:
     return anchor * local
@@ -224,6 +264,7 @@ func advance(delta: float) -> void:
         hold_time = 0.0
     progress.value = minf(hold_time, HOLD_SECONDS)
     elapsed = minf(DURATION, elapsed + delta)
+    if game.dialogue: game.dialogue.crown_tick(elapsed)
     sample(elapsed)
     if elapsed >= DURATION: handoff()
 
@@ -366,6 +407,7 @@ func _notification(what: int) -> void:
 
 func handoff() -> void:
     if handed_off: return
+    if game.dialogue: game.dialogue.end_cinematic(was_skipped)
     handed_off = true
     returning = true
     return_time = 0.0
@@ -373,11 +415,8 @@ func handoff() -> void:
     grade.hide()
     hint.hide()
     progress.value = 0
-    restore_actors()
-    if is_instance_valid(stage_root):
-        stage_root.hide()
-        stage_root.queue_free()
-    sand_audio = null
+    restore_actors(true)
+    clear_set()
     game.camera_director.make_current()
     game.camera_director.set_process(saved_camera_process)
     # Snap behind the restored player while completely black, then fade in.
@@ -386,7 +425,7 @@ func handoff() -> void:
     game.camera_director._process(1.0)
     game.hud.root.visible = old_hud_visible
 
-func restore_actors() -> void:
+func restore_actors(keep_boss_kneeling: bool = false) -> void:
     game.player.global_transform = saved_player
     game.boss.global_transform = saved_boss
     game.player.velocity = Vector3.ZERO
@@ -395,13 +434,21 @@ func restore_actors() -> void:
     game.boss.stagger_left = 0
     for actor in [game.player, game.boss]:
         actor.avatar.model.show()
+        if actor == game.boss and keep_boss_kneeling:
+            # Keep the final empty-handed kneel through the black handoff and fade-in.
+            pose_hands(8.4)
+            actor.weapon.hide()
+            if actor.eyes: actor.eyes.attachment.show()
+            continue
         actor.idle()
         actor.avatar.blend_left = 0
         actor.avatar.tick(0)
         actor.weapon.tick(0)
         actor.weapon.show()
         actor.trail.clear()
-        if actor.eyes: actor.eyes.tick(0.0)
+        if actor.eyes:
+            actor.eyes.attachment.show()
+            actor.eyes.tick(0.0)
 
 func finish() -> void:
     if not active: return
@@ -411,22 +458,28 @@ func finish() -> void:
     canvas.hide()
     game.camera_director.set_process_unhandled_input(saved_camera_input)
     game.stage = "explore" if game.crown_preview else "fight"
-    game.ai_wait = 1.4
     game.boss.face(game.player.global_position)
-    game.audio.set_combat(not game.crown_preview)
+    game.boss.action(game.STANDUP, "getup", [], 0.85)
+    if game.dialogue: game.dialogue.say("challenge", true)
+    game.boss.avatar.blend_left = 0.35
+    game.boss.avatar.tick(0.0)
+    game.boss.weapon.tick(0.0)
+    game.boss.weapon.show()
+    game.ai_wait = game.boss.duration + 0.35
+    game.audio.set_combat(not game.crown_preview, false)
     if rendered_frames > 0:
         print("CROWN_INTRO_FINISHED ", JSON.stringify({"skipped":was_skipped,"seconds":playback_seconds,"mean_fps":rendered_frames / maxf(playback_seconds,0.001),"review":game.crown_preview}))
     completed.emit(was_skipped)
 
 func abort() -> void:
     if not active: return
+    if game.dialogue: game.dialogue.end_cinematic(true)
     active = false
     set_process(false)
     escape_down = false
     hold_time = 0
     restore_actors()
-    if is_instance_valid(stage_root): stage_root.queue_free()
-    sand_audio = null
+    clear_set()
     canvas.hide()
     game.hud.root.visible = old_hud_visible
     game.camera_director.make_current()
@@ -435,4 +488,7 @@ func abort() -> void:
 
 func reset_sequence() -> void:
     abort()
+    waiting = false
+    clear_set()
     played = false
+    elapsed = 0.0

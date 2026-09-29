@@ -1,0 +1,37 @@
+{
+  "clips": [
+    {
+      "name": "BROKEN - CK - STONE Rock Drop On Rocks Large A 01",
+      "source": "source/sfx039-broken/SFX039_淘宝：星野CG设计素材/Broken_淘宝：星野CG设计素材/Construction Kit_淘宝：星野CG设计素材/BROKEN - CK - STONE Rock Drop On Rocks Large A 01.wav",
+      "source_sha256": "734301ad4373f967489882f869a462134a9d51b46522408e24997da0af930d6e",
+      "output": "assets/runtime/audio/v10/rock_drop_first_01.wav",
+      "source_crop_seconds": [
+        0,
+        1.42
+      ],
+      "gain_db": -3
+    },
+    {
+      "name": "BROKEN - CK - STONE Rock Drop On Rocks Large A 02",
+      "source": "source/sfx039-broken/SFX039_淘宝：星野CG设计素材/Broken_淘宝：星野CG设计素材/Construction Kit_淘宝：星野CG设计素材/BROKEN - CK - STONE Rock Drop On Rocks Large A 02.wav",
+      "source_sha256": "070ea639e9c0cdf0c89250e79934dadcdc0bbbb398ddf034aee0111aec234e18",
+      "output": "assets/runtime/audio/v10/rock_drop_first_02.wav",
+      "source_crop_seconds": [
+        0,
+        1.58
+      ],
+      "gain_db": -3
+    },
+    {
+      "name": "BROKEN - DESIGNED - EARTHQUAKE Rumble LFE 02",
+      "source": "source/sfx039-broken/SFX039_淘宝：星野CG设计素材/Broken_淘宝：星野CG设计素材/Designed_淘宝：星野CG设计素材/BROKEN - DESIGNED - EARTHQUAKE Rumble LFE 02.wav",
+      "source_sha256": "ce3eb3d4609352104ac73ef8a7ee9ac199de01517bfcbcefdd21b4c8800ccdbb",
+      "output": "assets/runtime/audio/v10/prebattle_earthquake.ogg",
+      "duration": 56.5609977324263,
+      "gain_linear": 1.3,
+      "crossfade_seconds": 3,
+      "peak_limiter_dbfs": -1
+    }
+  ],
+  "source_modified": false
+}

@@ -1,0 +1,142 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Should you find them, tell them they may go home",
+  "words": [
+    {
+      "text": "Should",
+      "start": 0.24,
+      "end": 0.46,
+      "type": "word",
+      "logprob": -0.003000997006893158
+    },
+    {
+      "text": " ",
+      "start": 0.46,
+      "end": 0.54,
+      "type": "spacing",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": "you",
+      "start": 0.54,
+      "end": 0.68,
+      "type": "word",
+      "logprob": -1.0728830375228426e-06
+    },
+    {
+      "text": " ",
+      "start": 0.68,
+      "end": 0.76,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "find",
+      "start": 0.76,
+      "end": 1.08,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 1.08,
+      "end": 1.12,
+      "type": "spacing",
+      "logprob": -2.9802276912960224e-06
+    },
+    {
+      "text": "them,",
+      "start": 1.12,
+      "end": 1.32,
+      "type": "word",
+      "logprob": -0.0001760920240485575
+    },
+    {
+      "text": " ",
+      "start": 1.32,
+      "end": 1.32,
+      "type": "spacing",
+      "logprob": -2.7418097943154862e-06
+    },
+    {
+      "text": "tell",
+      "start": 2.12,
+      "end": 2.36,
+      "type": "word",
+      "logprob": -2.7418097943154862e-06
+    },
+    {
+      "text": " ",
+      "start": 2.36,
+      "end": 2.42,
+      "type": "spacing",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": "them",
+      "start": 2.42,
+      "end": 2.7,
+      "type": "word",
+      "logprob": -3.576278118089249e-07
+    },
+    {
+      "text": " ",
+      "start": 2.7,
+      "end": 2.7,
+      "type": "spacing",
+      "logprob": -1.4185804502631072e-05
+    },
+    {
+      "text": "they",
+      "start": 3.3,
+      "end": 3.46,
+      "type": "word",
+      "logprob": -1.4185804502631072e-05
+    },
+    {
+      "text": " ",
+      "start": 3.46,
+      "end": 3.54,
+      "type": "spacing",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": "may",
+      "start": 3.54,
+      "end": 3.76,
+      "type": "word",
+      "logprob": -1.1920928244535389e-07
+    },
+    {
+      "text": " ",
+      "start": 3.76,
+      "end": 3.94,
+      "type": "spacing",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": "go",
+      "start": 3.94,
+      "end": 4.24,
+      "type": "word",
+      "logprob": -2.3841855067985307e-07
+    },
+    {
+      "text": " ",
+      "start": 4.24,
+      "end": 4.24,
+      "type": "spacing",
+      "logprob": -5.602820692729438e-06
+    },
+    {
+      "text": "home",
+      "start": 4.86,
+      "end": 5.4,
+      "type": "word",
+      "logprob": -5.602820692729438e-06
+    }
+  ],
+  "transcription_id": "FdpTWdSiUINpSuvWcn04",
+  "audio_duration_secs": 5.44
+}

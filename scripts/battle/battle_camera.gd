@@ -70,7 +70,7 @@ func _unhandled_input(event: InputEvent) -> void:
     if review_camera and event is InputEventMouseButton and event.pressed:
         if event.button_index == MOUSE_BUTTON_WHEEL_UP: review_distance = maxf(5,review_distance-0.8)
         if event.button_index == MOUSE_BUTTON_WHEEL_DOWN: review_distance = minf(26,review_distance+0.8)
-    if event.is_action_pressed("lock_on"): locked_on = not locked_on
+    if event.is_action_pressed("lock_on") and game.boss.hp > 0: locked_on = not locked_on
     if event is InputEventMouseMotion and Input.is_mouse_button_pressed(MOUSE_BUTTON_MIDDLE):
         yaw -= event.relative.x * 0.004
         pitch = clampf(pitch + event.relative.y * 0.003,-0.10,0.65)

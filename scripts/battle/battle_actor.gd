@@ -33,7 +33,7 @@ var eyes: Node3D
 func setup(owner_game: Node3D, actor_role: String) -> void:
     game = owner_game
     role = actor_role
-    max_hp = 680.0 if role == "general" else 100.0
+    max_hp = 680.0 if role == "general" else 200.0
     hp = max_hp
     avatar = DuelAvatar.new()
     add_child(avatar)
@@ -87,7 +87,8 @@ func action(id: String, action_state: String, windows: Array = [], playback: flo
     duration = float(avatar.manifest[id].length) / playback
     if state == "attack": game.swing(self,0)
     if state == "roll": game.audio.cue("player_roll",global_position)
-    if state == "roar": game.audio.cue("boss_roar",global_position,3)
+    if state == "roar":
+        if not game.dialogue.on_roar(): game.audio.cue("boss_roar",global_position,3)
 
 func motion(delta: float, input_direction: Vector3, sprint: bool) -> void:
     if hitstop_left > 0: return

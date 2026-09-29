@@ -1,0 +1,57 @@
+{
+  "voice_id": "cPoqAvGWCPfCfyPMwe4z",
+  "voice_name": "Victor - Deep, Malevolent and Ancient",
+  "model_id": "eleven_v3",
+  "spoken_language": "en",
+  "subtitle_language": "zh-CN",
+  "lines": {
+    "crown": {
+      "zh": "又一双手，想接住这顶冠。",
+      "en": "Another pair of hands, reaching for the crown.",
+      "performance": "[quietly] Another pair of hands, [short pause] reaching for the crown.",
+      "direction": "低沉、冷静地审视来者，句尾保留威严。",
+      "file": "res://assets/runtime/audio/voice-victor/crown.mp3",
+      "speech_end": 4.08
+    },
+    "challenge": {
+      "zh": "先让我看看……它们能承受多少。",
+      "en": "First, let me see… how much they can bear.",
+      "performance": "[serious] First, let me see... [lowered voice] how much they can bear.",
+      "direction": "从平静的审视转为带威胁的挑战，停顿后压低声音。",
+      "file": "res://assets/runtime/audio/voice-victor/challenge.mp3",
+      "speech_end": 4.485
+    },
+    "heavy": {
+      "zh": "让这战争……教你臣服！",
+      "en": "Let this war… teach you obeisance.",
+      "performance": "[angry] Let this war... [shouts] teach you obeisance!",
+      "direction": "蓄力时低吼，后半句用有重量的命令语气。",
+      "file": "res://assets/runtime/audio/voice-victor/heavy.mp3",
+      "speech_end": 3.92
+    },
+    "roar": {
+      "zh": "跪下！连死者都未曾获准起身！",
+      "en": "Kneel! Even the dead have not been granted leave to rise!",
+      "performance": "[shouts] Kneel! [angry] Even the dead have not been granted leave to rise!",
+      "direction": "第一词爆发为战吼，后半句强硬而清晰。",
+      "file": "res://assets/runtime/audio/voice-victor/roar.mp3",
+      "speech_end": 6.885
+    },
+    "player_fallen": {
+      "zh": "又一位觊觎王冠的人……终于俯首。",
+      "en": "Another claimant to the crown… bows at last.",
+      "performance": "[coldly] Another claimant to the crown... [quietly] bows at last.",
+      "direction": "胜者的冷漠，略带蔑视，句尾收低。",
+      "file": "res://assets/runtime/audio/voice-victor/player_fallen.mp3",
+      "speech_end": 5.44
+    },
+    "warden_fallen": {
+      "zh": "若你见到他们……就说，可以回家了。",
+      "en": "Should you find them… tell them they may go home.",
+      "performance": "[weary] Should you find them... [softly] tell them they may go home.",
+      "direction": "濒死的疲惫，最后一句释然、温柔，不再威胁。",
+      "file": "res://assets/runtime/audio/voice-victor/warden_fallen.mp3",
+      "speech_end": 5.446
+    }
+  }
+}

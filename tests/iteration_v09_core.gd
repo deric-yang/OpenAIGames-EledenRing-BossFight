@@ -12,6 +12,7 @@ func run():
     await process_frame
     for id in [game.COUNTER,game.ROAR]:
         game.reset()
+        game.crown_intro.cancel_waiting()
         game.stage="fight"
         game.player.position=game.world.ground(8,-50)
         game.boss.position=game.world.ground(8,-54)
@@ -19,13 +20,14 @@ func run():
         if id==game.ROAR: game.boss.action(id,"roar",[0.38])
         else: game.start_boss_attack(id)
         game.contact(game.boss,0)
-        check(game.player.hp==100,"Push/roar causes zero damage "+id)
+        check(game.player.hp==game.player.max_hp,"Push/roar causes zero damage "+id)
         check(game.player.state=="pushback","Push/roar uses standing recoil "+id)
         check(game.player.velocity.y==0,"No launch velocity "+id)
         game.action_finished(game.player)
         check(game.player.state=="idle","Recoil recovers without down state "+id)
     for attack in 4:
         game.reset()
+        game.crown_intro.cancel_waiting()
         game.effects.clear()
         game.stage="fight"
         game.player.position=game.world.ground(8,-51)
@@ -90,21 +92,22 @@ func run():
     game.skill_fx._process(3)
     check(game.skill_fx.groups.is_empty(),"VFX releases its instances")
     game.reset()
+    game.crown_intro.cancel_waiting()
     game.stage="fight"
     game.player.position=game.world.ground(8,-43)
     game.boss.position=game.world.ground(8,-53)
     game.boss.face(game.player.position)
     game.start_boss_attack("combat-master-b05c145bc48d267a1ad9")
     game.contact(game.boss,0)
-    check(game.player.hp==100,"Fissure telegraph cannot damage")
+    check(game.player.hp==game.player.max_hp,"Fissure telegraph cannot damage")
     game.tick_hazards(0.86)
-    check(game.player.hp==100,"Far target untouched when fracture starts")
+    check(game.player.hp==game.player.max_hp,"Far target untouched when fracture starts")
     game.tick_hazards(0.1)
-    check(game.player.hp==100,"Damage cannot outrun visible fracture")
+    check(game.player.hp==game.player.max_hp,"Damage cannot outrun visible fracture")
     game.tick_hazards(0.2)
-    check(game.player.hp==66,"Advancing front reaches target")
+    check(game.player.hp==game.player.max_hp-34,"Advancing front reaches target")
     game.tick_hazards(0.1)
-    check(game.player.hp==66,"Wave hits each player once")
+    check(game.player.hp==game.player.max_hp-34,"Wave hits each player once")
     game.shared_hitstop=0
     game.player.hitstop_left=0
     game.boss.hitstop_left=0
@@ -115,8 +118,9 @@ func run():
     var start: Vector3=game.boss.position
     for i in 60: game.boss.motion(1.0/60,Vector3.BACK,true)
     check(Vector2(game.boss.position.x-start.x,game.boss.position.z-start.z).length()>7.5,"Boss sprint covers a full large stride")
-    check(game.boss.avatar.speed>0.7 and game.boss.avatar.speed<0.9,"Boss cadence matches scaled stride")
+    check(game.boss.avatar.speed>0.7 and game.boss.avatar.speed<0.9,"Boss cadence matches scaled stride: "+str(game.boss.avatar.speed))
     game.reset()
+    game.crown_intro.cancel_waiting()
     game.stage="fight"
     game.player.position=game.world.ground(8,-51)
     game.boss.position=game.world.ground(8,-53)

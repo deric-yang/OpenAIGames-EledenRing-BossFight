@@ -21,6 +21,16 @@ func run() -> void:
     game.set_physics_process(false)
     var intro = game.crown_intro
     intro.completed.connect(func(_skipped): completions += 1)
+    check(intro.waiting and game.boss.state=="ceremony", "Boss starts in the crown-holding kneel")
+    var waiting_head: Vector3 = game.boss.avatar.bone_transform("head").origin
+    var waiting_prop = intro.prop
+    for i in 240: game._physics_process(1.0/60)
+    check(intro.waiting and game.boss.avatar.bone_transform("head").origin.is_equal_approx(waiting_head), "Spawn and idle keep the kneeling pose without starting combat")
+    check(intro.prop==waiting_prop and not intro.active and intro.elapsed==0, "Crown waits intact on the same ceremonial set")
+    check(game.player.hp==200 and game.player.max_hp==200 and game.boss.max_hp==680, "Player health doubles; boss health stays unchanged")
+    game.player.hp=34
+    game.reset()
+    check(game.player.hp==200 and intro.waiting, "Respawn restores 200 HP and the opening kneel")
     begin()
     var start: Vector3 = game.player.position
     var hp: float = game.player.hp
@@ -42,11 +52,16 @@ func run() -> void:
     intro.sample(9.99)
     intro.advance(0.02)
     check(intro.returning and intro.active and intro.overlay.color.a==1.0,"Natural ending switches camera under full black")
-    check(game.camera_director.current and game.boss.weapon.visible and game.player.avatar.model.visible,"Handoff restores actors, weapon and gameplay camera")
+    check(game.camera_director.current and not game.boss.weapon.visible and game.player.avatar.model.visible,"Handoff restores player and camera but keeps the boss kneeling")
     intro.handoff()
     intro.advance(0.45)
     check(not intro.active and game.stage=="fight" and completions==1,"One natural completion after readable fade-in")
     check(game.player.position==start and game.player.hp==hp,"Handoff preserves approach position and HP")
+    check(game.boss.state=="getup" and game.boss.clip==game.STANDUP and game.boss.weapon.visible, "Only completed cinematic starts the armed rise into combat")
+    var rise_duration: float = game.boss.duration
+    for i in ceili(rise_duration*60)+2: game._physics_process(1.0/60)
+    check(game.boss.state in ["idle","move"] and game.attack_count==0, "Boss completes the rise before attacking")
+    check(game.boss.avatar.bone_transform("head").origin.y > waiting_head.y+1, "Rise visibly brings the boss to standing height")
     begin()
     var key := InputEventKey.new()
     key.physical_keycode=KEY_ESCAPE
@@ -64,6 +79,7 @@ func run() -> void:
     check(intro.was_skipped and intro.returning and intro.overlay.color.a==1.0,"Held ESC uses the shared black handoff")
     intro.advance(0.46)
     check(not intro.active and completions==2 and game.stage=="fight","Skip restores battle once")
+    check(game.boss.state=="getup", "Skip uses the same kneel-to-rise combat transition")
     begin()
     intro._input(key)
     intro.advance(0.5)
@@ -87,11 +103,37 @@ func run() -> void:
     check(game.boss.avatar.elapsed>before,"Normal actor ticking resumes after the handoff")
     game.reset()
     game.review_dashboard=true
+    intro.cancel_waiting()
     intro.start()
     check(not intro.active,"Motion review cannot trigger cinematic")
+    check(not intro.waiting and intro.stage_root==null and game.boss.weapon.visible, "Motion review removes ceremonial props and restores the held weapon")
+    game.audio.start_ambient()
+    game.audio.set_combat(false)
+    check(game.audio.music_target==-60, "Exploration and ceremony do not start combat music")
+    game.audio.set_combat(true)
+    var music: AudioStreamPlayer = game.audio.music
+    check(music.stream.resource_path==BattleAudio.BATTLE_MUSIC and music.stream.loop, "Combat uses the new looping Final Battle recording")
+    check(music.stream.get_length()>298 and music.stream.get_length()<299, "Complete 4:58 recording is imported, without truncation")
+    check(music.playing and game.audio.music_target==BattleAudio.MUSIC_GAIN, "Battle music starts at the established mix gain")
+    music.seek(music.stream.get_length()-0.08)
+    await create_timer(0.3).timeout
+    check(music.playing and music.get_playback_position()<1, "End of recording wraps into its next loop")
+    game.audio.set_combat(false)
+    game.audio._process(3)
+    check(not music.playing, "Leaving combat fades music out and stops it")
+    game.audio.set_combat(true)
+    game.audio.reset_cues()
+    check(not music.playing and game.audio.music_target==-60, "Respawn clears the old combat soundtrack")
+    var bar_size: Vector2 = game.hud.player_track.size
+    game.player.hp=100
+    game.hud._process(0)
+    check(is_equal_approx(game.hud.player_track.value,0.5), "100 health is now half of the same player bar")
+    check(game.hud.player_track.size==bar_size, "Changing health never resizes the HUD")
     var out := {"checks":checks,"failures":failures}
     FileAccess.open("res://qa/crown-intro-v01/regression.json",FileAccess.WRITE).store_string(JSON.stringify(out,"  "))
     print("CROWN_INTRO_TEST ",JSON.stringify(out))
     game.queue_free()
     await process_frame
+    # Let the audio mixer release active stream playbacks before the headless exit.
+    await create_timer(0.15).timeout
     quit(0 if failures.is_empty() else 1)

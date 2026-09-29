@@ -14,6 +14,7 @@ var player: BattleActor
 var boss: BattleActor
 var camera_director: BattleCamera
 var audio: BattleAudio
+var dialogue: WardenDialogue
 var effects: BattleEffects
 var skill_fx: WardenSkillEffects
 var skills: Dictionary
@@ -43,6 +44,7 @@ var review_rate := 1.0
 var rng := RandomNumberGenerator.new()
 var crown_intro: Node3D
 var crown_preview := false
+var commands: PlayerCommands
 
 func _ready() -> void:
     rng.seed = 927264
@@ -75,6 +77,10 @@ func _ready() -> void:
     hud = EncounterHUD.new()
     add_child(hud)
     hud.setup(self,event_bus)
+    dialogue = WardenDialogue.new()
+    dialogue.name = "WardenDialogue"
+    add_child(dialogue)
+    dialogue.setup(self)
     status = Label.new()
     hud.root.add_child(status)
     status.set_anchors_and_offsets_preset(Control.PRESET_BOTTOM_WIDE)
@@ -91,6 +97,9 @@ func _ready() -> void:
     crown_intro.name = "CrownIntro"
     add_child(crown_intro)
     crown_intro.setup(self)
+    commands = PlayerCommands.new()
+    add_child(commands)
+    commands.setup(self)
     reset()
     effects.warmup(player.global_position+Vector3.UP)
     if OS.has_feature("web"):
@@ -99,6 +108,7 @@ func _ready() -> void:
             JavaScriptBridge.eval("window.__wardenCommand=null; window.addEventListener('message',e=>{if(e.origin===location.origin&&e.data?.type==='warden-motion')window.__wardenCommand=Object.assign(window.__wardenCommand||{},e.data);}); window.parent.postMessage({type:'warden-ready'},location.origin);")
     if OS.get_cmdline_user_args().has("--motion-review"): review_dashboard = true
     if review_dashboard:
+        crown_intro.cancel_waiting()
         stage = "review"
         player.avatar.model.visible = false
         player.weapon.visible = false
@@ -120,6 +130,8 @@ func start_crown_preview() -> void:
     crown_intro.start()
 
 func reset() -> void:
+    if dialogue: dialogue.reset_encounter()
+    if commands: commands.clear("reset")
     if crown_intro: crown_intro.reset_sequence()
     director.reset()
     boss_closing = false
@@ -133,6 +145,7 @@ func reset() -> void:
     audio.reset_cues()
     stage = "intro"
     camera_director.reset_execution()
+    camera_director.locked_on = true
     clock = 0
     victory_wait = -1
     boss_followup = ""
@@ -141,9 +154,11 @@ func reset() -> void:
     attack_count = 0
     player.reset_at(world.respawn_position + Vector3.UP * 0.05)
     boss.reset_at(world.boss_position)
+    boss.set_collision_layer_value(2,true)
+    boss.set_collision_mask_value(3,true)
     player.face(boss.global_position)
     boss.face(player.global_position)
-    boss.idle()
+    if not review_dashboard: crown_intro.prepare_waiting()
     effects.materialize(player.avatar,true)
     player.weapon.visible = false
     camera_director.intro = true
@@ -166,7 +181,8 @@ func _unhandled_input(event: InputEvent) -> void:
         if event.physical_keycode == KEY_P:
             if stage in ["fight","approach","review","explore","ready"]:
                 stage = "fight" if stage in ["review","explore"] else "explore"
-                boss.idle()
+                if stage == "fight": crown_intro.cancel_waiting()
+                if not crown_intro.waiting: boss.idle()
     if event is InputEventMouseButton and event.pressed:
         audio.start_ambient()
         if stage in ["intro","ready"] and not audio.cue_counts.has("announcement_spawn"):
@@ -187,13 +203,16 @@ func queue_contact(actor: BattleActor, segment: int) -> void:
 
 func _physics_process(delta: float) -> void:
     if not player: return
-    if crown_intro and crown_intro.active: return
+    commands.poll_focus()
+    if crown_intro and crown_intro.active:
+        commands.clear("cinematic")
+        return
     if review_dashboard:
         dashboard_tick(delta)
         return
+    if crown_intro.waiting and stage not in ["intro","ready","approach","explore"]:
+        crown_intro.cancel_waiting()
     if shared_hitstop > 0:
-        if Input.is_action_just_pressed("attack") and player.state=="attack" and not player.heavy_attack:
-            player.queued = true
         shared_hitstop = maxf(0,shared_hitstop-delta)
         player.hitstop_left = shared_hitstop
         boss.hitstop_left = shared_hitstop
@@ -201,7 +220,7 @@ func _physics_process(delta: float) -> void:
     clock += delta
     tick_hazards(delta)
     if shared_hitstop > 0: return
-    audio.set_combat(stage in ["fight","execution"])
+    audio.set_combat(stage in ["fight","execution"], stage in ["intro","ready","approach"] or (stage=="explore" and not crown_intro.played))
     if not performance_reported and clock > 15:
         performance_reported = true
         print_metrics()
@@ -213,26 +232,15 @@ func _physics_process(delta: float) -> void:
         stage = "explore" if preview_mode else "ready"
         player.weapon.visible = true
         camera_director.intro = false
-    if stage in ["fight","approach","explore","review"]:
-        if Input.is_action_just_pressed("roll") and player.state not in ["dead","execution","launch","pushback"] and player.stamina >= 25:
-            player.stamina -= 25
-            player.queued = false
-            player.move_direction = direction if direction.length_squared() > 0.01 else player.forward()
-            player.face(player.global_position+player.move_direction)
-            player.action("Roll","roll",[],1.33333)
-        if Input.is_action_just_pressed("heavy_attack") and player.state in ["idle","move"] and player.stamina >= 28:
-            player_heavy_attack()
-        if Input.is_action_just_pressed("attack") and player.stamina >= 16:
-            if player.state in ["idle","move"]: player_attack(0 if player.time > 0.8 else player.combo)
-            elif player.state == "attack" and not player.heavy_attack: player.queued = true
-        if player.state in ["attack","execution"] and player.time < player.duration*0.2:
+    if stage in ["fight","approach","explore","review","victory"]:
+        commands.tick(delta)
+        if stage != "victory" and player.state in ["attack","execution"] and player.time < player.duration*0.2:
             player.face(boss.global_position,delta)
         if stage == "fight": boss_brain(delta)
     if stage == "approach":
         var approach_distance := Vector2(player.position.x-boss.position.x,player.position.z-boss.position.z).length()
         if approach_distance < 14 and absf(player.position.y-boss.position.y)<6:
             if not crown_intro.played:
-                boss.face(player.global_position)
                 crown_intro.start()
                 return
             stage = "fight"
@@ -250,7 +258,7 @@ func _physics_process(delta: float) -> void:
         camera_director.impulse(0.13,0.15)
         freeze_combat(10)
         return
-    player.motion(delta,direction if stage in ["fight","approach","explore","review"] and player.hp > 0 else Vector3.ZERO,Input.is_action_pressed("sprint") and player.stamina > 8)
+    player.motion(delta,direction if stage in ["fight","approach","explore","review","victory"] and player.hp > 0 else Vector3.ZERO,Input.is_action_pressed("sprint") and player.stamina > 8)
     var boss_direction := Vector3.ZERO
     if stage == "fight" and boss.state in ["idle","move"]:
         var offset := player.global_position-boss.global_position
@@ -265,7 +273,8 @@ func _physics_process(delta: float) -> void:
         elif boss_retreating: boss_direction = -offset.normalized()*0.65
         elif director.remaining == 0 and ai_wait > 0.4: boss_direction = boss.global_basis.x*0.4
 
-    boss.motion(delta,boss_direction,boss.global_position.distance_to(player.global_position)>13)
+    if not crown_intro.waiting:
+        boss.motion(delta,boss_direction,boss.global_position.distance_to(player.global_position)>13)
     var contacts := pending_contacts.duplicate()
     pending_contacts.clear()
     for hit in contacts: contact(hit.actor,hit.segment)
@@ -283,6 +292,7 @@ func _physics_process(delta: float) -> void:
     if boss.stagger_left > 0 and stage == "fight": status.text = "WARDEN KNEELING — approach and press F to execute"
     if stage == "approach": status.text = "ANCIENT BATTLEFIELD — ascend the dune and approach the Warden beneath the tree"
     if stage == "defeat": status.text = "YOU DIED — R to rise again at the golden sigil"
+    if stage == "victory": status.text = "VICTORY — WASD move  |  Shift run  |  Space roll  |  MMB camera  |  R restart"
     if stage == "explore": status.text = "EXPLORE — WASD / Shift / MMB camera  |  B review selected motions  |  P resume combat"
     if crown_preview and stage == "explore": status.text = "CROWN INTRO REVIEW — R replay cinematic  |  P begin combat  |  WASD / MMB explore"
     if stage == "review":
@@ -338,6 +348,7 @@ func start_boss_attack(id: String) -> void:
     boss.impact_damage = float(profile.damage)
     boss.face(player.global_position)
     boss.action(id,"attack",profile.windows,float(profile.speed))
+    dialogue.on_heavy(profile)
     if id != COUNTER: director.started(id,boss.duration,profile)
     if profile.has("voice"): audio.cue(str(profile.voice),boss.global_position,0)
     camera_director.impulse(0.018 if profile.damage < 30 else 0.035,0.05)
@@ -366,6 +377,8 @@ func contact(actor: BattleActor, _segment: int, delayed: Dictionary = {}) -> voi
                 return
             if not bool(delayed.get("wave",false)):
                 skill_fx.impact(origin,direction,profile)
+                # Exactly at rock eruption, including delayed thrusts; never once per wave tick.
+                audio.fracture(origin,profile)
                 if profile.shape=="lane":
                     hazards.append({"profile":profile.duplicate(true),"origin":origin,"forward":direction,"wait":0.0,"wave":true,"age":0.0,"hit":false})
                     return
@@ -381,6 +394,7 @@ func contact(actor: BattleActor, _segment: int, delayed: Dictionary = {}) -> voi
     if actor == boss and delayed.is_empty() and (actor.state == "roar" or actor.clip == COUNTER):
         # Sekiro's standing Hit_Chest reaction; launch/down is reserved for damaging heavy blows.
         target.queued = false
+        commands.clear("forced_hit")
         target.action("Hit_Chest","pushback",[],0.85)
         target.velocity = horizontal.normalized()*6.5
         audio.cue("player_hurt",target.global_position,-2)
@@ -418,19 +432,22 @@ func contact(actor: BattleActor, _segment: int, delayed: Dictionary = {}) -> voi
         if player.hp <= 0:
             player.action("Death01","dead")
             player.weapon.visible = false
+            commands.clear("death")
             stage = "defeat"
             director.cancel_sequence()
             pending_roar = false
             audio.cue("player_death",player.global_position,2)
-            audio.cue("boss_victory",boss.global_position,2)
+            dialogue.on_result(false)
             boss.idle()
             audio.announce("death")
             event_bus.emit_event("player_died",{})
         elif damage >= 30:
+            commands.clear("forced_hit")
             player.action("ual2/Hit_Knockback_RM","launch")
             player.velocity = actor.forward()*7 + Vector3.UP*2
             audio.cue("player_launch",player.global_position)
         else:
+            commands.clear("forced_hit")
             player.action("Hit_Chest","hit")
             player.velocity = actor.forward()*2
             audio.cue("player_hurt",player.global_position)
@@ -449,9 +466,8 @@ func action_finished(actor: BattleActor) -> void:
         elif player.state == "launch":
             player.state = "down"
             return
-        elif player.state == "attack" and player.queued and player.stamina >= 16:
-            player_attack((player.combo+1)%3)
-            return
+        elif player.state == "attack":
+            commands.remember_chain()
         player.idle()
     else:
         if boss.state == "stagger":
@@ -483,6 +499,7 @@ func action_finished(actor: BattleActor) -> void:
             ai_wait = director.recovery(skills.get(completed_clip,{}),rng)
 
 func execute() -> void:
+    commands.clear("execution")
     if stage != "fight" or boss.stagger_left <= 0 or player.global_position.distance_to(boss.global_position)>4: return
     stage = "execution"
     director.cancel_sequence()
@@ -497,17 +514,24 @@ func execute() -> void:
     camera_director.begin_execution()
 
 func win() -> void:
+    dialogue.on_result(true)
+    commands.clear("victory")
     director.cancel_sequence()
     pending_roar = false
     stage = "victory"
     camera_director.end_execution()
+    camera_director.locked_on = false
     boss.hp = 0
+    # The defeated actor remains for its dissolve, but must not be an invisible obstacle.
+    boss.set_collision_layer_value(2,false)
+    boss.set_collision_mask_value(3,false)
     boss.state = "down"
     boss_followup = ""
     victory_wait = 0.55
     player.idle()
 
 func review_next() -> void:
+    crown_intro.cancel_waiting()
     if stage != "review":
         player.global_position = world.ground(boss.global_position.x,boss.global_position.z+7.0)
         player.velocity = Vector3.ZERO

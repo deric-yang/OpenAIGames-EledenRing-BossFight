@@ -1,0 +1,86 @@
+{
+  "language_code": "eng",
+  "language_probability": 1.0,
+  "text": "Let this war teach you obeisance",
+  "words": [
+    {
+      "text": "Let",
+      "start": 0.26,
+      "end": 0.48,
+      "type": "word",
+      "logprob": -0.0006456674309447408
+    },
+    {
+      "text": " ",
+      "start": 0.48,
+      "end": 0.62,
+      "type": "spacing",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": "this",
+      "start": 0.62,
+      "end": 0.86,
+      "type": "word",
+      "logprob": -3.933898824470816e-06
+    },
+    {
+      "text": " ",
+      "start": 0.86,
+      "end": 1.04,
+      "type": "spacing",
+      "logprob": -4.172316494077677e-06
+    },
+    {
+      "text": "war",
+      "start": 1.04,
+      "end": 1.6,
+      "type": "word",
+      "logprob": -4.172316494077677e-06
+    },
+    {
+      "text": " ",
+      "start": 1.6,
+      "end": 1.64,
+      "type": "spacing",
+      "logprob": -3.123234637314454e-05
+    },
+    {
+      "text": "teach",
+      "start": 2.14,
+      "end": 2.44,
+      "type": "word",
+      "logprob": -3.123234637314454e-05
+    },
+    {
+      "text": " ",
+      "start": 2.44,
+      "end": 2.54,
+      "type": "spacing",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": "you",
+      "start": 2.54,
+      "end": 2.74,
+      "type": "word",
+      "logprob": -2.0265558760002023e-06
+    },
+    {
+      "text": " ",
+      "start": 2.74,
+      "end": 2.84,
+      "type": "spacing",
+      "logprob": -0.0024405713193118572
+    },
+    {
+      "text": "obeisance",
+      "start": 2.84,
+      "end": 3.84,
+      "type": "word",
+      "logprob": -0.0010241730487905443
+    }
+  ],
+  "transcription_id": "RqCmSbkqiWCfBLbYkc9h",
+  "audio_duration_secs": 3.92
+}
